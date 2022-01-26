@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img
+            src="https://www.creativefabrica.com/wp-content/uploads/2021/01/23/Letter-M-MM-Monogram-Logo-Design-vector-Graphics-8008302-1-1-580x386.jpg"
+            alt="logo"
+          />
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="resume"><a href="">Resume</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="sidebar">
+        <ul>
+          <li>
+            <a href="https://github.com/matthewvolny"
+              ><img src="" alt="github icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://codepen.io/mvolny"
+              ><img src="" alt="codepen icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/matthew-volny-a12965138/"
+              ><img src="" alt="linkedIn icon"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <main>
+        <div class="intro">
+          <div class="lead-in">Hi there, my name is</div>
+          <div class="name">Matthew Volny</div>
+          <div>and I create things with code</div>
+          <div>
+            Before ormer scientist and university teacher, I bring a deep
+            curiosity and creative perspective to web development. Click on the
+            links above or scroll down to learn more about me and see what I am
+            currently up to.
+          </div>
+        </div>
+        <section class="about">
+          <div class="tagline">
+            <div class="number">1.</div>
+            <div class="title">About Me</div>
+          </div>
+          <div class="body">
+            <p>
+              Hello! My name is Matthew. Before learning to code I was an
+              Instructor at the University of Virginia, and a scientist at a
+              Biotechnology company. I have always loved learning how complex
+              things work, hence the PhD, but at the same time I have always had
+              a drive to build something useful with that knowledge and
+              understanding. For the past decade I have been doing that in the
+              field of molecular genetics. Diving deep into the published
+              literature, carrying out experiments in the laboratory, and data
+              analysis at my desk. I was even given the opportunity to teach
+              university students - something that I will probably always enjoy
+              doing, though these days my lessons would probably be in computer
+              programming.
+            </p>
+            <p>
+              Fast-forward to today, and you will find me building my skills in
+              the Javascript-stack, building websites, apps, and features as I
+              finish up a 6-month software development bootcamp. I absolutely
+              love this new field of coding. It brings me so much joy to bring a
+              simple idea from a rough sketch on paper to a full-featured
+              application, as does the community of fellow developers that I
+              have met up until this point. I sometimes wonder how software
+              development eluded me for all these years, while I was pursuing a
+              career elsewhere, being just so engaging and creative, but I
+              suppose I am here now. Look below, for some of the technologies I
+              have been working with recently.
+            </p>
+          </div>
+        </section>
+        <div class="portfolio"><%= locals.about || 'Default' %></div>
+        <div class="contact"><%= locals.about || 'Default' %></div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="logo">
+          logo
+          <img src="" alt="" />
+        </div>
+        <ul>
+          <li><a href="">about</a></li>
+          <li><a href="">portfolio</a></li>
+          <li><a href="">contact</a></li>
+        </ul>
+      </nav>
+      <main>
+        <div class="sidebar">
+          <ul>
+            <li>
+              <a href=""><img src="" alt="" />github</a>
+            </li>
+            <li>
+              <a href=""><img src="" alt="" />codepen</a>
+            </li>
+            <li>
+              <a href=""><img src="" alt="" />indeed</a>
+            </li>
+          </ul>
+        </div>
+        <div class="intro">
+          <div>Hi there, my name is</div>
+          <div>Matthew Volny</div>
+          <div>and I create things with code</div>
+          <div>
+            As a former scientist and university teacher, I bring both an
+            analytical and creative perspective to web development. Click on the
+            links above or scroll down to learn more about me and see what I am
+            currently up to.
+          </div>
+        </div>
+        <div class="about"><%= 2 + 2 %></div>
+        <div class="portfolio"><%= locals.about || 'Default' %></div>
+        <div class="contact"><%= locals.about || 'Default' %></div>
+      </main>
+    </div>
+  </body>
+</html>
