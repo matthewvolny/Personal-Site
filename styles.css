@@ -67,6 +67,23 @@ header {
   padding-bottom: 0.2em;
 }
 
+.intro {
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+
+section {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 500ms linear;
+  border: red solid 1px;
+}
+
+#in-viewport {
+  visibility: visible;
+  opacity: 1;
+}
+
 .lead-in {
   color: #63ffda;
 }
