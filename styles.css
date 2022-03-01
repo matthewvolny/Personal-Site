@@ -1,5 +1,5 @@
 :root {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #8992b0;
 }
@@ -14,18 +14,15 @@ body * + * {
 }
 
 body {
-  background-color: #4f709f;
-  margin: 2em 4em;
+  background-color: white;
+  margin: 2em 7em;
+  font-size: 1.3em;
 }
 
 header {
-  height: 10vh;
+  height: 6vh;
   display: flex;
   justify-content: space-between;
-}
-
-.logo {
-  height: 100%;
 }
 
 .logo > img {
@@ -60,9 +57,9 @@ header {
 }
 
 .resume {
-  color: #63ffda;
-  border: #63ffda solid 1px;
-  border-radius: 0.1em;
+  color: #008c86;
+  border: #008c86 solid 1px;
+  border-radius: 0.2em;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
 }
@@ -72,11 +69,15 @@ header {
   margin-bottom: 6em;
 }
 
+.intro div {
+  margin-top: 0.8rem;
+}
+
 section {
   visibility: hidden;
   opacity: 0;
   transition: all 500ms linear;
-  border: red solid 1px;
+  /* border: red solid 1px; */
 }
 
 #in-viewport {
@@ -85,24 +86,49 @@ section {
 }
 
 .lead-in {
-  color: #63ffda;
+  color: #008c86;
 }
 
 .name {
   color: #ccd6f6;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .name + div {
   color: #8992b0;
-  font-size: 2em;
+  font-size: 2.5em;
+  margin-top: 0.1em;
 }
 
 .sidebar {
+  position: fixed;
+  bottom: 150px;
+  left: 55px;
+}
+.sidebar::after {
   position: absolute;
-  top: 90%;
+  content: ".";
+  color: transparent;
+  width: 100px;
+  height: 300px;
+  border-right: black 3px solid;
+  right: 13px;
+  top: 165px;
+}
+
+.sidebar > ul {
+  padding: 0;
+  margin: 0;
 }
 
 .sidebar > ul li {
   list-style: none;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+.sidebar > ul li a {
+}
+.sidebar-icon {
+  width: 27px;
 }

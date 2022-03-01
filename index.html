@@ -6,21 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(() => {
+        const $aboutButton = $(".about");
+        const $portfolioButton = $(".portfolio");
+        const $contactButton = $(".contact");
+
+        $aboutButton.on("click", (e) => {
+          e.preventDefault();
+          $("html, body").animate(
+            {
+              scrollTop: $("#about").offset().top,
+            },
+            1000
+          );
+        });
+
+        $portfolioButton.on("click", (e) => {
+          e.preventDefault();
+          $("html, body").animate(
+            {
+              scrollTop: $("#portfolio").offset().top,
+            },
+            1000
+          );
+        });
+
+        $contactButton.on("click", (e) => {
+          e.preventDefault();
+          $("html, body").animate(
+            {
+              scrollTop: $("#contact").offset().top,
+            },
+            1000
+          );
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="container">
       <header>
         <div class="logo">
-          <img
-            src="https://www.creativefabrica.com/wp-content/uploads/2021/01/23/Letter-M-MM-Monogram-Logo-Design-vector-Graphics-8008302-1-1-580x386.jpg"
-            alt="logo"
-          />
+          <img src="./assets/m.png" alt="logo" />
         </div>
         <nav class="main-nav">
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a class="about" href="#about">About</a></li>
+            <li><a class="portfolio" href="#portfolio">Portfolio</a></li>
+            <li><a class="contact" href="#contact">Contact</a></li>
             <li class="resume"><a href="">Resume</a></li>
           </ul>
         </nav>
@@ -29,17 +68,26 @@
         <ul>
           <li>
             <a href="https://github.com/matthewvolny"
-              ><img src="" alt="github icon"
+              ><img
+                class="sidebar-icon"
+                src="./assets/icons8-github.svg"
+                alt="github icon"
             /></a>
           </li>
           <li>
             <a href="https://codepen.io/mvolny"
-              ><img src="" alt="codepen icon"
+              ><img
+                class="sidebar-icon"
+                src="./assets/icons8-codepen.svg"
+                alt="codepen icon"
             /></a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/matthew-volny-a12965138/"
-              ><img src="" alt="linkedIn icon"
+              ><img
+                class="sidebar-icon"
+                src="./assets/icons8-linkedin.svg"
+                alt="linkedIn icon"
             /></a>
           </li>
         </ul>
@@ -193,7 +241,7 @@
       </main>
       <div class="footer">
         <div>Designed and built by Matthew Volny</div>
-        <a href="">Github repo link</a>
+        <a href=""><img src="./assets/iconmonstr-code-fork-1.svg" alt="" /></a>
       </div>
     </div>
     <script src="./scripts.js"></script>
