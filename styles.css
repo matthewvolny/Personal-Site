@@ -16,7 +16,7 @@ body * + * {
 body {
   background-color: white;
   margin: 2em 7em;
-  font-size: 1.3em;
+  font-size: 1.2rem;
 }
 
 header {
@@ -87,6 +87,7 @@ section {
 
 .lead-in {
   color: #008c86;
+  font-size: 1.4rem;
 }
 
 .name {
@@ -130,5 +131,5 @@ section {
 .sidebar > ul li a {
 }
 .sidebar-icon {
-  width: 27px;
+  width: 30px;
 }
