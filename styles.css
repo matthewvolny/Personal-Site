@@ -56,12 +56,12 @@ header {
   color: inherit;
 }
 
-.resume {
+#resume {
   color: #008c86;
   border: #008c86 solid 1px;
   border-radius: 0.2em;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+  padding: 0.2em 0.8em;
+  margin-left: 1.2em;
 }
 
 .intro {
