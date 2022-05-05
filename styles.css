@@ -22,15 +22,21 @@ body {
 }
 
 header {
-  height: 6vh;
+  height: 60px;
   display: flex;
   justify-content: space-between;
+  /* border: 1px solid tan; */
 }
 
-.logo > img {
+.logo-container {
+  /* border: 1px solid red; */
+}
+
+.logo-container > img {
   overflow: hidden;
   object-fit: cover;
   height: 100%;
+  /* border: 1px solid orange; */
 }
 
 .main-nav {
@@ -69,7 +75,7 @@ header {
 .intro {
   /* border: silver 1px solid; */
   /* adjusts that first in-frame window */
-  margin-top: 20vh;
+  margin-top: 16vh;
   margin-bottom: 7em;
   letter-spacing: 0.015rem;
 }
@@ -126,7 +132,7 @@ section + section {
   height: 500px;
 }
 .project + .project {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
 }
 
 .title {
@@ -143,7 +149,7 @@ section + section {
   width: calc(53% + 0px);
   object-fit: cover;
   overflow: hidden;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   height: 425px;
   border-radius: 0.5em;
 }
@@ -182,7 +188,7 @@ section + section {
   align-self: flex-end;
   height: 425px;
   border-radius: 0.5em;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   object-fit: cover;
   overflow: hidden;
 }

@@ -52,7 +52,7 @@
   <body>
     <div class="container">
       <header>
-        <div class="logo">
+        <div class="logo-container">
           <img src="./assets/m.png" alt="logo" />
         </div>
         <nav class="main-nav">
@@ -138,27 +138,25 @@
           <div class="title">
             <span class="number">2.</span> Some things I've built
           </div>
-
+          <!--  -->
           <div class="project project-odd">
             <div class="project-image-container">
               <img
                 class="project-image"
-                src="./assets/marsRover_1.png"
+                src="./assets/crypto_screenshot_1.png"
                 alt="MarsRoverSite"
               />
             </div>
             <div class="project-details">
               <div class="tagline">
                 <div class="inset-tagline">Featured Project</div>
-                <div class="project-name">Mars Kids App</div>
+                <div class="project-name">Crypto Dashboard</div>
                 <p class="description">
-                  A kids educational app for learning about Mars. Users select a
-                  rover, view its journey (plotted using NASA geoJSON data), and
-                  interact with a map via clickable waypoints. Selection of the
-                  <!-- rover also makes visible an animated timeline showing entries
-                  for each year of its journey. These include the date, a
-                  headline, and photos taken by the rover and obtained by
-                  querying NASA’s Mars rover API. -->
+                  Interactive dashboard displaying up-to-the-minute prices,
+                  news, and charts for a user's cryptocurrency assets, and
+                  thousands of other coins. Site data is derived from public
+                  APIs, with animated charts made using either 'britecharts' or
+                  'lightweight-charts'.
                 </p>
               </div>
               <div class="tech-container">
@@ -191,20 +189,135 @@
               </div>
             </div>
           </div>
+          <!--  -->
           <div class="project project-even">
+            <div class="project-details">
+              <div class="tagline">
+                <div class="inset-tagline">Featured Project</div>
+                <div class="project-name">Point-and-Click Adventure Game</div>
+                <p class="description">
+                  • Point-and-click game where players explore an expansive map,
+                  collecting items and solving puzzles. Images are made
+                  interactive using 'image-maps', navigation is accomplished
+                  with 'react-router', and a SQL database is used to save
+                  game-state.
+                </p>
+              </div>
+              <div class="tech-container">
+                <ul class="tech tech-even">
+                  <li>Javascript</li>
+                  <li>HTML/CSS</li>
+                  <li>Socket.io</li>
+                  <li>MongoDB</li>
+                </ul>
+              </div>
+              <div class="links links-even">
+                <ul>
+                  <li>
+                    <a
+                      class="project-link-image-container"
+                      href=""
+                      target="_blank"
+                      ><img src="./assets/icons8-github.svg" alt="github_icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      class="project-link-image-container"
+                      href=""
+                      target="_blank"
+                      ><img src="./assets/icons8-external-link.svg" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-image-container">
+              <img
+                class="project-image"
+                src="./assets/game_screenshot_1.png"
+                alt="MarsRoverSite"
+              />
+            </div>
+          </div>
+          <!--  -->
+          <div class="project project-odd">
+            <div class="project-image-container">
+              <img
+                class="project-image"
+                src="./assets/chat_app_screenshot.png"
+                alt="MarsRoverSite"
+              />
+            </div>
             <div class="project-details">
               <div class="tagline">
                 <div class="inset-tagline">Featured Project</div>
                 <div class="project-name">Chat App</div>
                 <p class="description">
-                  Real-time chat application for scheduling private conversation
-                  between two or more users. Visitors enter their registration
-                  information, select a cartoon avatar, and once logged in, have
+                  Real-time chat application to schedule and have private
+                  conversation between two or more users. Socket connections are
+                  made using a node server and 'socket.io', while user data -
+                  including contacts and message histories - are stored in a
+                  noSQL database. Real-time chat application for scheduling
+                  private conversation between two or more users. Visitors enter
+                  their registration information, select a cartoon avatar, and
+                  once logged in, have
                   <!-- access to a customized dashboard showing their contacts (with
                   archived chat history) and contacts’ information. With the
                   click of a button users can invite others to the site,
                   expanding their contacts list and providing new chat
                   opportunities. -->
+                </p>
+              </div>
+              <div class="tech-container">
+                <ul class="tech tech-odd">
+                  <li>Javascript</li>
+                  <li>HTML/CSS</li>
+                  <li>jQuery</li>
+                </ul>
+              </div>
+              <div class="links links-odd">
+                <ul>
+                  <li>
+                    <a class="project-link-image-container" href=""
+                      ><img
+                        src="./assets/icons8-github.svg"
+                        target="_blank"
+                        alt="github_icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a class="project-link-image-container" href=""
+                      ><img
+                        src="./assets/icons8-external-link.svg"
+                        target="_blank"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="project project-even">
+            <div class="project-details">
+              <div class="tagline">
+                <div class="inset-tagline">Featured Project</div>
+                <div class="project-name">Mars Learning Site</div>
+                <p class="description">
+                  Kids educational app for learning about Mars rover missions.
+                  Faux 3-D animated globe built using CSS, interactive map
+                  produced using NASA 'geoJSON' data and Javascript's 'canvas'
+                  API, and dynamic timeline made using data from the NASA Mars
+                  Rover API. A kids educational app for learning about Mars.
+                  Users select a rover, view its journey (plotted using NASA
+                  geoJSON data), and interact with a map via clickable
+                  waypoints. Selection of the
+                  <!-- rover also makes visible an animated timeline showing entries
+                  for each year of its journey. These include the date, a
+                  headline, and photos taken by the rover and obtained by
+                  querying NASA’s Mars rover API. -->
                 </p>
               </div>
               <div class="tech-container">
@@ -246,16 +359,13 @@
           </div>
         </section>
         <section id="contact">
-          <div class="tagline">
-            <div class="number">3.</div>
-            <div class="title">What's next?</div>
-            <div class="headline">Get In Touch</div>
-          </div>
+          <div class="title"><span class="number">3.</span> Get In Touch</div>
+
           <div class="body">
             <p>
               I am currently looking for new opportunities in software
               development. So, whether you have a question or just want to say
-              hi, I’ll try my best to get back to you. My Inbox is always open.
+              hi, I'll try my best to get back to you. My Inbox is always open.
             </p>
           </div>
           <button class="Hi-button">Say Hello</button>
