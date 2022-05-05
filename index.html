@@ -60,14 +60,18 @@
             <li><a class="about" href="#about">About</a></li>
             <li><a class="portfolio" href="#portfolio">Portfolio</a></li>
             <li><a class="contact" href="#contact">Contact</a></li>
-            <li id="resume"><a href="">Resume</a></li>
+            <li id="resume">
+              <a href="./public/Matthew Volny - Resume.pdf" target="_blank"
+                >Resume</a
+              >
+            </li>
           </ul>
         </nav>
       </header>
       <div class="sidebar">
         <ul>
           <li>
-            <a href="https://github.com/matthewvolny"
+            <a href="https://github.com/matthewvolny" target="_blank"
               ><img
                 class="sidebar-icon"
                 src="./assets/icons8-github.svg"
@@ -75,7 +79,7 @@
             /></a>
           </li>
           <li>
-            <a href="https://codepen.io/mvolny"
+            <a href="https://codepen.io/mvolny" target="_blank"
               ><img
                 class="sidebar-icon"
                 src="./assets/icons8-codepen.svg"
@@ -83,7 +87,9 @@
             /></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/matthew-volny-a12965138/"
+            <a
+              href="https://www.linkedin.com/in/matthew-volny-a12965138/"
+              target="_blank"
               ><img
                 class="sidebar-icon"
                 src="./assets/icons8-linkedin.svg"
@@ -97,7 +103,7 @@
           <div class="lead-in">Hi there, my name is</div>
           <div class="name">Matthew Volny</div>
           <div>and I create things with code</div>
-          <div>
+          <div class="intro-blurb">
             As a former scientist and university instructor, I bring a deep
             curiosity and creative perspective to web development. Click on the
             links above or scroll down to learn more about me and see what I am
@@ -111,15 +117,15 @@
               Hello! My name is Matthew. Before learning to code I was an
               Instructor at the University of Virginia, and a scientist at a
               Biotechnology company. I have always loved learning how complex
-              things work (hence the PhD), but at the same time I have always
-              had a drive to build something useful with that knowledge and
-              understanding. Fast-forward to today, and you will find me
-              building a variety of web applications, and features as I finish
-              up a 6-month software development bootcamp. I absolutely love this
-              new field of coding. It brings me so much joy to bring a simple
-              idea from a rough sketch on paper to a full-featured application,
-              as does the community of fellow developers that I have met up
-              until this point.
+              things work, but at the same time I have always had a drive to
+              build something useful with that knowledge and understanding.
+              Fast-forward to today, and you will find me building a variety of
+              web applications, and features as I finish up a 6-month software
+              development bootcamp. I absolutely love this new field of coding.
+              It brings me so much joy to bring a simple idea from a rough
+              sketch on paper to a full-featured application, as does the
+              community of fellow developers that I have met up until this
+              point.
             </p>
             <ul>
               <li>Javascript</li>
@@ -129,14 +135,17 @@
           </div>
         </section>
         <section id="portfolio">
-          <div>
-            <div class="title">
-              <span class="number">2.</span> Some things I've built
-            </div>
+          <div class="title">
+            <span class="number">2.</span> Some things I've built
           </div>
-          <div class="project">
-            <div class="project-images">
-              <img src="./assets/marsRover_1.png" alt="MarsRoverSite" />
+
+          <div class="project project-odd">
+            <div class="project-image-container">
+              <img
+                class="project-image"
+                src="./assets/marsRover_1.png"
+                alt="MarsRoverSite"
+              />
             </div>
             <div class="project-details">
               <div class="tagline">
@@ -146,36 +155,43 @@
                   A kids educational app for learning about Mars. Users select a
                   rover, view its journey (plotted using NASA geoJSON data), and
                   interact with a map via clickable waypoints. Selection of the
-                  rover also makes visible an animated timeline showing entries
+                  <!-- rover also makes visible an animated timeline showing entries
                   for each year of its journey. These include the date, a
                   headline, and photos taken by the rover and obtained by
-                  querying NASA’s Mars rover API.
+                  querying NASA’s Mars rover API. -->
                 </p>
               </div>
-              <div class="tech">
-                <ul>
+              <div class="tech-container">
+                <ul class="tech tech-odd">
                   <li>Javascript</li>
                   <li>HTML/CSS</li>
                   <li>jQuery</li>
                 </ul>
               </div>
-              <div class="links">
+              <div class="links links-odd">
                 <ul>
                   <li>
-                    <a href=""
-                      ><img src="./assets/icons8-github.svg" alt="github_icon"
+                    <a class="project-link-image-container" href=""
+                      ><img
+                        src="./assets/icons8-github.svg"
+                        target="_blank"
+                        alt="github_icon"
                     /></a>
                   </li>
                   <li>
-                    <a href=""
-                      ><img src="./assets/icons8-external-link.svg" alt="" />
+                    <a class="project-link-image-container" href=""
+                      ><img
+                        src="./assets/icons8-external-link.svg"
+                        target="_blank"
+                        alt=""
+                      />
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="project projectEven">
+          <div class="project project-even">
             <div class="project-details">
               <div class="tagline">
                 <div class="inset-tagline">Featured Project</div>
@@ -184,38 +200,48 @@
                   Real-time chat application for scheduling private conversation
                   between two or more users. Visitors enter their registration
                   information, select a cartoon avatar, and once logged in, have
-                  access to a customized dashboard showing their contacts (with
+                  <!-- access to a customized dashboard showing their contacts (with
                   archived chat history) and contacts’ information. With the
                   click of a button users can invite others to the site,
                   expanding their contacts list and providing new chat
-                  opportunities.
+                  opportunities. -->
                 </p>
               </div>
-              <div class="tech">
-                <ul>
+              <div class="tech-container">
+                <ul class="tech tech-even">
                   <li>Javascript</li>
                   <li>HTML/CSS</li>
                   <li>Socket.io</li>
                   <li>MongoDB</li>
                 </ul>
               </div>
-              <div class="links">
+              <div class="links links-even">
                 <ul>
                   <li>
-                    <a href=""
+                    <a
+                      class="project-link-image-container"
+                      href=""
+                      target="_blank"
                       ><img src="./assets/icons8-github.svg" alt="github_icon"
                     /></a>
                   </li>
                   <li>
-                    <a href=""
+                    <a
+                      class="project-link-image-container"
+                      href=""
+                      target="_blank"
                       ><img src="./assets/icons8-external-link.svg" alt="" />
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="project-images">
-              <img src="./assets/marsRover_1.png" alt="MarsRoverSite" />
+            <div class="project-image-container">
+              <img
+                class="project-image"
+                src="./assets/marsRover_1.png"
+                alt="MarsRoverSite"
+              />
             </div>
           </div>
         </section>

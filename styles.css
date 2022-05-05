@@ -17,6 +17,8 @@ body {
   background-color: white;
   margin: 2em 7em;
   font-size: 1.2rem;
+  /* border: 1px solid red; */
+  min-width: 850px;
 }
 
 header {
@@ -59,25 +61,42 @@ header {
 #resume {
   color: #008c86;
   border: #008c86 solid 1px;
-  border-radius: 0.2em;
+  border-radius: 0.3em;
   padding: 0.2em 0.8em;
   margin-left: 1.2em;
 }
 
 .intro {
-  margin-top: 6em;
-  margin-bottom: 6em;
+  /* border: silver 1px solid; */
+  /* adjusts that first in-frame window */
+  margin-top: 20vh;
+  margin-bottom: 7em;
+  letter-spacing: 0.015rem;
 }
 
 .intro div {
   margin-top: 0.8rem;
 }
 
+.intro-blurb {
+  line-height: 1.7rem;
+  width: 55%;
+  /* border: 1px solid yellowgreen; */
+}
+
+.title + div {
+  margin-top: 1.7rem;
+}
+
 section {
   visibility: hidden;
   opacity: 0;
   transition: all 500ms linear;
-  /* border: red solid 1px; */
+  /* border: purple solid 1px; */
+}
+
+section + section {
+  margin-top: 5.5rem;
 }
 
 #in-viewport {
@@ -99,6 +118,208 @@ section {
   color: #8992b0;
   font-size: 2.5em;
   margin-top: 0.1em;
+}
+
+.project {
+  display: flex;
+  /* border: 1px solid tan; */
+  height: 500px;
+}
+.project + .project {
+  margin-top: 3rem;
+}
+
+.title {
+  font-size: 1.6rem;
+}
+
+.title > span {
+  font-size: 1.6rem;
+  color: #008c86;
+  margin-right: 0.3em;
+}
+
+.project-odd > .project-image-container {
+  width: calc(53% + 0px);
+  object-fit: cover;
+  overflow: hidden;
+  border: 1px solid green;
+  height: 425px;
+  border-radius: 0.5em;
+}
+
+/* would like height of images to be the "same" as text block */
+.project-image {
+  width: 100%;
+  /* height: 425px; */
+}
+
+.project-odd > .project-details {
+  text-align: right;
+  position: relative;
+  /* position: absolute; */
+  width: 53%;
+  right: 0;
+  margin-left: -50px;
+  /* margin-top: 5em; */
+  align-self: flex-end;
+  height: 425px;
+  background: rgb(120, 163, 170, 0.6);
+  padding: 1.5em 2.5em;
+  color: white;
+  border-radius: 0.5em;
+  /* border: 1px solid orange; */
+}
+
+.project-even > .project-image-container {
+  text-align: right;
+  position: relative;
+  /* position: absolute; */
+  width: 53%;
+  right: 0;
+  margin-left: -50px;
+  /* margin-top: 5em; */
+  align-self: flex-end;
+  height: 425px;
+  border-radius: 0.5em;
+  border: 1px solid orange;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.project-even > .project-details {
+  width: calc(53% + 0px);
+  object-fit: cover;
+  overflow: hidden;
+  /* border: 1px solid green; */
+  height: 425px;
+  border-radius: 0.5em;
+  z-index: 10;
+  color: white;
+  background: rgb(120, 163, 170, 0.6);
+  padding: 1.5em 2.5em;
+}
+
+.inset-tagline {
+  font-size: 1.1rem;
+  color: #008c86;
+}
+
+.project-name {
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: lighter;
+}
+
+.description {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.tech-container {
+  width: 100%;
+  /* border: 1px solid red; */
+  margin-top: 0;
+}
+
+.tech {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.tech-odd {
+  justify-content: flex-end;
+}
+
+.tech-odd > li {
+  font-size: 1.2rem;
+  /* margin-top: 0; */
+  margin-top: 1rem;
+  margin-left: 1.3rem;
+}
+
+.tech-odd > li:first-child {
+  margin-top: 1rem;
+  margin-left: 0rem;
+}
+
+.tech-even {
+  justify-content: flex-start;
+}
+
+.tech-even > li {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  /* margin-top: 0; */
+  margin-right: 1.3rem;
+}
+
+.tech-even > li:last-child {
+  margin-right: 0rem;
+  margin-top: 1rem;
+}
+
+.links {
+  width: 100%;
+  /* border: 1px solid green; */
+}
+
+.links > ul {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  /* border: 1px solid yellow; */
+  padding: 0;
+  margin: 0;
+}
+
+.links > ul li {
+  font-size: 1.2rem;
+  /* margin: 0em 0em 0em 1em; */
+  margin-top: 0;
+}
+
+.links-odd > ul {
+  justify-content: flex-end;
+}
+
+.links-odd > ul li {
+  margin-left: 1rem;
+  /* border: 1px pink solid; */
+}
+
+.links-even > ul {
+  justify-content: flex-start;
+}
+
+.links-even > ul > li {
+  margin-right: 1rem;
+  /* border: 1px pink solid; */
+}
+
+.project-link-image-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links img {
+  width: 33px;
+  /* border: 1px solid red; */
+}
+
+#contact {
+  /* position: absolute;
+  top: 1000px;
+  bottom: 500px;
+  margin-bottom: 1000px;
+  color: red;
+  margin-top: 500px; */
 }
 
 .sidebar {
@@ -132,114 +353,4 @@ section {
 }
 .sidebar-icon {
   width: 30px;
-}
-
-.project {
-  display: flex;
-}
-
-.title {
-  font-size: 1.6rem;
-}
-
-.title > span {
-  font-size: 1.6rem;
-  color: #008c86;
-  margin-right: 0.3em;
-}
-
-.project-images {
-  width: 65%;
-}
-
-.project-images img {
-  width: 100%;
-  border-radius: 0.5em;
-}
-
-.project-details {
-  text-align: right;
-  position: relative;
-  /* position: absolute; */
-  width: 60%;
-  right: 0;
-  margin-left: -50px;
-  margin-top: 5em;
-  background: rgb(120, 163, 170, 0.6);
-  padding: 1.2em 2.5em;
-  color: white;
-  border-radius: 0.5em;
-}
-
-.projectEven .project-images {
-  margin-top: 0;
-  width: 65%;
-  margin-left: -50px;
-  position: relative;
-  right: 0;
-  transform: scaleX(-1);
-}
-
-.projectEven .project-details {
-  text-align: left;
-  /* position: absolute; */
-  width: 60%;
-  margin-left: 0;
-  margin-top: 5em;
-  background: rgb(120, 163, 170, 0.6);
-  padding: 1.2em 2.5em;
-  color: white;
-  border-radius: 0.5em;
-  z-index: 2;
-}
-
-.inset-tagline {
-  font-size: 1.1rem;
-  color: #008c86;
-}
-
-.project-name {
-  margin-top: 0.5rem;
-  font-size: 1.6rem;
-  font-weight: lighter;
-}
-
-.description {
-  margin-top: 0.5rem;
-}
-
-.tech > ul {
-  display: flex;
-  justify-content: end;
-  list-style: none;
-}
-
-.tech > ul li {
-  font-size: 1.2rem;
-  margin: 0em 0em 0em 1em;
-}
-
-.links > ul {
-  display: flex;
-  justify-content: end;
-  list-style: none;
-  margin-bottom: 0;
-}
-
-.links > ul li {
-  font-size: 1.2rem;
-  margin: 0em 0em 0em 1em;
-}
-
-.links img {
-  width: 33px;
-}
-
-#contact {
-  /* position: absolute;
-  top: 1000px;
-  bottom: 500px;
-  margin-bottom: 1000px;
-  color: red;
-  margin-top: 500px; */
 }
