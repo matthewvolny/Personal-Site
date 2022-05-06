@@ -117,7 +117,7 @@
           <div class="title"><span class="number">1.</span> About Me</div>
           <div class="about-me-flex">
             <div class="intro-and-skills-flex">
-              <div class="into">
+              <div class="about-me-intro">
                 Hello, My name is Matthew! I am a former PhD scientist and
                 university instructor, who recently transitioned into a career
                 in software development. I am naturally inquisitive, comfortable
@@ -127,15 +127,6 @@
               </div>
               <div class="skills">
                 <div>Things I know</div>
-                <!-- <div>Languages: <span>Javascript</span>HTML/CSS<span></span></div>
-            <div>Libraries/Frameworks</div>
-            <div>Node.js</div>
-            <div>React</div>
-            <div>Bootstrap</div>
-            <div>jQuery</div>
-            <div>Databases</div>
-            <div>PostgreSQL</div>
-            <div>MongoDB</div> -->
                 <ul class="listed-skills-flex">
                   <li>Javascript</li>
                   <li>HTML/CSS</li>
@@ -158,29 +149,39 @@
           </div>
           <!--  -->
           <div class="project project-odd">
-            <div class="crypto-images-container project-image-container">
-              <img
-                class="project-image"
-                src="./assets/crypto_screenshot_1.png"
-                alt="MarsRoverSite"
-              />
-              <!-- <img
-                class="crypto-image"
-                src="./assets/crypto-image2.png"
-                alt="MarsRoverSite"
-              /> -->
-              <!-- <div class="image-navigation-bar"></div> -->
+            <div class="project-image-container">
+              <!--  -->
+              <div class="slideshow-container">
+                <img
+                  class="slideshow-image"
+                  src="./assets/crypto_screenshot_1.png"
+                  alt="MarsRoverSite"
+                />
+                <img
+                  class="slideshow-image"
+                  src="./assets/crypto-image2.png"
+                  alt="MarsRoverSite"
+                />
+                <img
+                  class="slideshow-image"
+                  src="./assets/crypto-image-3.png"
+                  alt="MarsRoverSite"
+                />
+                <div class="slideshow-nav-bar">
+                  <div class="0"></div>
+                  <div class="1"></div>
+                  <div class="2"></div>
+                </div>
+                <!-- <div class="background-slideshow-nav"></div> -->
+              </div>
+              <!--  -->
             </div>
-            <!-- <div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div> -->
+
             <div class="project-details">
               <div class="tagline">
                 <div class="inset-tagline">Featured Project</div>
                 <div class="project-name">Crypto Dashboard</div>
-                <p class="description">
+                <p class="description-odd">
                   Interactive dashboard displaying up-to-the-minute prices,
                   news, and charts for a user's cryptocurrency assets, and
                   thousands of other coins. Site data is derived from public
@@ -190,9 +191,9 @@
               </div>
               <div class="tech-container">
                 <ul class="tech tech-odd">
-                  <li>Javascript</li>
-                  <li>HTML/CSS</li>
-                  <li>jQuery</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>PostgreSQL</li>
                 </ul>
               </div>
               <div class="links links-odd">
@@ -224,8 +225,8 @@
               <div class="tagline">
                 <div class="inset-tagline">Featured Project</div>
                 <div class="project-name">Point-and-Click Adventure Game</div>
-                <p class="description">
-                  • Point-and-click game where players explore an expansive map,
+                <p class="description-even">
+                  Point-and-click game where players explore an expansive map,
                   collecting items and solving puzzles. Images are made
                   interactive using 'image-maps', navigation is accomplished
                   with 'react-router', and a SQL database is used to save
@@ -234,10 +235,9 @@
               </div>
               <div class="tech-container">
                 <ul class="tech tech-even">
-                  <li>Javascript</li>
-                  <li>HTML/CSS</li>
-                  <li>Socket.io</li>
-                  <li>MongoDB</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>PostgreSQL</li>
                 </ul>
               </div>
               <div class="links links-even">
@@ -282,7 +282,7 @@
               <div class="tagline">
                 <div class="inset-tagline">Featured Project</div>
                 <div class="project-name">Chat App</div>
-                <p class="description">
+                <p class="description-odd">
                   Real-time chat application to schedule and have private
                   conversation between two or more users. Socket connections are
                   made using a node server and 'socket.io', while user data -
@@ -300,9 +300,9 @@
               </div>
               <div class="tech-container">
                 <ul class="tech tech-odd">
-                  <li>Javascript</li>
-                  <li>HTML/CSS</li>
-                  <li>jQuery</li>
+                  <li>Express</li>
+                  <li>Socket.io</li>
+                  <li>MongoDB</li>
                 </ul>
               </div>
               <div class="links links-odd">
@@ -334,7 +334,7 @@
               <div class="tagline">
                 <div class="inset-tagline">Featured Project</div>
                 <div class="project-name">Mars Learning Site</div>
-                <p class="description">
+                <p class="description-even">
                   Kids educational app for learning about Mars rover missions.
                   Faux 3-D animated globe built using CSS, interactive map
                   produced using NASA 'geoJSON' data and Javascript's 'canvas'
@@ -352,9 +352,8 @@
               <div class="tech-container">
                 <ul class="tech tech-even">
                   <li>Javascript</li>
+                  <li>jQuery</li>
                   <li>HTML/CSS</li>
-                  <li>Socket.io</li>
-                  <li>MongoDB</li>
                 </ul>
               </div>
               <div class="links links-even">
@@ -406,25 +405,6 @@
         <div>Designed and built by Matthew Volny</div>
         <a href=""><img src="./assets/iconmonstr-code-fork-1.svg" alt="" /></a>
       </div>
-      <!--  -->
-      <div class="slideshow-container">
-        <img
-          class="slideshow-image"
-          src="./assets/crypto_screenshot_1.png"
-          alt="MarsRoverSite"
-        />
-        <img
-          class="slideshow-image"
-          src="./assets/crypto-image2.png"
-          alt="MarsRoverSite"
-        />
-        <div class="slideshow-nav-bar">
-          <div class="0"></div>
-          <div class="1"></div>
-          <div class="2"></div>
-        </div>
-      </div>
-      <!--  -->
     </div>
     <script src="./scripts.js"></script>
   </body>
