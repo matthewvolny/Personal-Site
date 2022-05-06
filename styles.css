@@ -15,7 +15,7 @@ body * + * {
 
 body {
   background-color: white;
-  margin: 2em 7em;
+  margin: 2em 7.1em;
   font-size: 1.2rem;
   /* border: 1px solid red; */
   min-width: 850px;
@@ -109,6 +109,10 @@ header {
 
 .title + div {
   margin-top: 1.7rem;
+}
+
+.paragraph {
+  letter-spacing: 0.05rem;
 }
 
 section {
