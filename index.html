@@ -181,13 +181,13 @@
               <div class="tagline">
                 <div class="inset-tagline">Featured Project</div>
                 <div class="project-name">Crypto Dashboard</div>
-                <p class="description-odd">
+                <div class="description-odd">
                   Interactive dashboard displaying up-to-the-minute prices,
                   news, and charts for a user's cryptocurrency assets, and
                   thousands of other coins. Site data is derived from public
                   APIs, with animated charts made using either 'britecharts' or
                   'lightweight-charts'.
-                </p>
+                </div>
               </div>
               <div class="tech-container">
                 <ul class="tech tech-odd">
@@ -225,13 +225,13 @@
               <div class="tagline">
                 <div class="inset-tagline">Featured Project</div>
                 <div class="project-name">Point-and-Click Adventure Game</div>
-                <p class="description-even">
+                <div class="description-even">
                   Point-and-click game where players explore an expansive map,
                   collecting items and solving puzzles. Images are made
                   interactive using 'image-maps', navigation is accomplished
                   with 'react-router', and a SQL database is used to save
                   game-state.
-                </p>
+                </div>
               </div>
               <div class="tech-container">
                 <ul class="tech tech-even">
@@ -282,7 +282,7 @@
               <div class="tagline">
                 <div class="inset-tagline">Featured Project</div>
                 <div class="project-name">Chat App</div>
-                <p class="description-odd">
+                <div class="description-odd">
                   Real-time chat application to schedule and have private
                   conversation between two or more users. Socket connections are
                   made using a node server and 'socket.io', while user data -
@@ -296,7 +296,7 @@
                   click of a button users can invite others to the site,
                   expanding their contacts list and providing new chat
                   opportunities. -->
-                </p>
+                </div>
               </div>
               <div class="tech-container">
                 <ul class="tech tech-odd">
@@ -334,7 +334,7 @@
               <div class="tagline">
                 <div class="inset-tagline">Featured Project</div>
                 <div class="project-name">Mars Learning Site</div>
-                <p class="description-even">
+                <div class="description-even">
                   Kids educational app for learning about Mars rover missions.
                   Faux 3-D animated globe built using CSS, interactive map
                   produced using NASA 'geoJSON' data and Javascript's 'canvas'
@@ -347,7 +347,7 @@
                   for each year of its journey. These include the date, a
                   headline, and photos taken by the rover and obtained by
                   querying NASA’s Mars rover API. -->
-                </p>
+                </div>
               </div>
               <div class="tech-container">
                 <ul class="tech tech-even">
@@ -386,24 +386,28 @@
             </div>
           </div>
         </section>
-        <section id="contact">
+        <section id="contact" class="contact">
           <div class="title"><span class="number">3.</span> Get In Touch</div>
-
-          <div class="body">
-            <p>
-              I am currently looking for new opportunities in software
-              development. So, whether you have a question or just want to say
-              hi, I'll try my best to get back to you. My Inbox is always open.
-            </p>
+          <div class="contact-me-paragraph">
+            I am currently looking for new opportunities in software
+            development. So, whether you have a question or just want to say hi,
+            I'll try my best to get back to you. My Inbox is always open.
           </div>
-          <a class="hello-button" href="mailto:matthew.volny@gmail.com"
-            >Say Hello</a
-          >
+          <div class="contact-me-button-container">
+            <a class="hello-button" href="mailto:matthew.volny@gmail.com"
+              >Say Hello</a
+            >
+          </div>
         </section>
       </main>
       <div class="footer">
-        <div>Designed and built by Matthew Volny</div>
-        <a href=""><img src="./assets/iconmonstr-code-fork-1.svg" alt="" /></a>
+        <div>Built by Matthew Volny</div>
+        <a
+          class="personal-site-github-link"
+          href="https://github.com/matthewvolny/Personal-Site"
+          target="_blank"
+          ><img src="./assets/iconmonstr-code-fork-1.svg" alt=""
+        /></a>
       </div>
     </div>
     <script src="./scripts.js"></script>
