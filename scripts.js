@@ -11,6 +11,17 @@ function addInView() {
 
 window.addEventListener("scroll", addInView);
 
+const profileImage = document.querySelector(".profile-image-container > img");
+profileImage.addEventListener("mouseover", () => {
+  const imageBackground = document.querySelector(".profile-image-background");
+  imageBackground.setAttribute("id", "image-background-hovered");
+});
+
+profileImage.addEventListener("mouseout", () => {
+  const imageBackground = document.querySelector(".profile-image-background");
+  imageBackground.removeAttribute("id");
+});
+
 const slideshowImages = document.querySelectorAll(".slideshow-image");
 const slideshowNavBarDots = document.querySelectorAll(
   ".slideshow-nav-bar > div"
@@ -61,3 +72,21 @@ for (let i = 0; i < slideshowNavBarDots.length; i++) {
 //     changeSlide();
 //   });
 // });
+
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  speed: 400,
+  centeredSlides: true,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

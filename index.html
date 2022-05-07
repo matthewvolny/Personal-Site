@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <script>
       $(document).ready(() => {
         const $aboutButton = $(".about");
@@ -159,8 +164,26 @@
           <!--  -->
           <div class="project project-odd">
             <div class="project-image-container">
+              <!-- Swiper -->
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/crypto_screenshot_1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/crypto-image2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/crypto-image-3.png" />
+                  </div>
+                </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+                <div class="swiper-pagination"></div>
+              </div>
+
               <!--  -->
-              <div class="slideshow-container">
+              <!-- <div class="slideshow-container">
                 <img
                   class="slideshow-image"
                   src="./assets/crypto_screenshot_1.png"
@@ -181,8 +204,7 @@
                   <div class="1"></div>
                   <div class="2"></div>
                 </div>
-                <!-- <div class="background-slideshow-nav"></div> -->
-              </div>
+              </div> -->
               <!--  -->
             </div>
 
@@ -405,6 +427,11 @@
         /></a>
       </div>
     </div>
+    <!--  -->
+    <!-- 
+ -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./scripts.js"></script>
   </body>
 </html>
