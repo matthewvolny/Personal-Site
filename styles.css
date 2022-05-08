@@ -222,7 +222,7 @@ section + section {
   width: 91%;
   background-color: #008c86;
   z-index: -1;
-  transition: all 1s;
+  transition: all 0.3s;
 }
 
 #image-background-hovered {
@@ -303,8 +303,8 @@ section + section {
   width: 100%;
   padding-top: 25px;
   padding-bottom: 30px;
-  padding-right: 35%;
-  padding-left: 35%;
+  padding-right: 39%;
+  padding-left: 39%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -312,7 +312,8 @@ section + section {
 .swiper-pagination-bullet {
   width: 15px !important;
   height: 15px !important;
-  background-color: rgb(0, 140, 134, 0.5) !important;
+  opacity: 1 !important;
+  background-color: rgb(0, 140, 134, 0.3) !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -321,46 +322,40 @@ section + section {
   background-color: rgb(0, 140, 134) !important;
 }
 
-/* #slideshow-image {
-  margin-top: 0;
-} */
-
-/*  */
-/* .slideshow-nav-bar {
-  
+.swiper-button-prev {
+  color: rgb(0, 140, 134) !important;
+  left: 25px !important;
 }
 
-.slideshow-nav-bar > div {
-  margin-top: 0;
-  width: 20px;
-  height: 20px;
-  background-color: rgb(128, 128, 128, 0.5);
-  border-radius: 50%;
+.swiper-button-next {
+  /* border: 1px solid blue; */
+  color: rgb(0, 140, 134) !important;
+  right: 25px !important;
 }
 
-#nav-dot-clicked {
-  background-color: #008c86;
-} */
-/*  */
+.swiper-button-prev::after {
+  font-size: 45px !important;
+}
 
-/* .background-slideshow-nav {
+.swiper-button-next::after {
+  font-size: 45px !important;
+}
 
-  z-index: 500;
-  background-color: #1c377f;
-  width: 300px;
-  height: 400px;
-  left: 0;
-  bottom: 300;
-} */
+.swiper-button-disabled {
+  opacity: 1 !important;
+  color: rgb(0, 140, 134, 0.3) !important;
+}
 
 .project-odd > .project-image-container {
   width: calc(57% + 0px);
   object-fit: cover;
   overflow: hidden;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   height: 450px;
   border-radius: 1.2em;
   background-color: rgb(137, 146, 176);
+  z-index: 50;
+  box-shadow: 0 3px 10px rgba(147, 147, 147, 0.1);
 }
 
 /* would like height of images to be the "same" as text block */
@@ -388,8 +383,8 @@ section + section {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  box-shadow: 0 3px 10px rgba(147, 147, 147, 0.1);
-  z-index: 10;
+  /* box-shadow: 0 3px 10px rgba(147, 147, 147, 0.1); */
+  /* z-index: 10; */
 }
 
 .project-even > .project-image-container {
@@ -403,7 +398,7 @@ section + section {
   align-self: flex-end;
   height: 450px;
   border-radius: 1.2em;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   object-fit: cover;
   overflow: hidden;
 }
