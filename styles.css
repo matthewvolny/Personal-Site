@@ -232,8 +232,9 @@ section + section {
 
 .project {
   display: flex;
+  /* justify-content: space-between; */
   /* border: 1px solid tan; */
-  height: 525px;
+  height: 550px;
   /* position: relative; */
 }
 .project + .project {
@@ -351,7 +352,7 @@ section + section {
   object-fit: cover;
   overflow: hidden;
   /* border: 1px solid orange; */
-  height: 450px;
+  height: 475px;
   border-radius: 1.2em;
   background-color: rgb(137, 146, 176);
   z-index: 50;
@@ -373,12 +374,12 @@ section + section {
   margin-left: -50px;
   /* margin-top: 5em; */
   align-self: flex-end;
-  height: 450px;
+  height: 475px;
   background: rgb(120, 163, 170, 0.6);
-  padding: 1.5em 2.5em;
+  padding: 1.5em 2em;
   color: white;
   border-radius: 1.2em;
-  /* border: 1px solid orange; */
+  border: 1px solid orange;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -396,7 +397,7 @@ section + section {
   margin-left: -50px;
   /* margin-top: 5em; */
   align-self: flex-end;
-  height: 450px;
+  height: 475px;
   border-radius: 1.2em;
   /* border: 1px solid orange; */
   object-fit: cover;
@@ -404,16 +405,20 @@ section + section {
 }
 
 .project-even > .project-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   width: calc(49% + 0px);
   object-fit: cover;
   overflow: hidden;
-  /* border: 1px solid green; */
-  height: 450px;
+  border: 1px solid red;
+  height: 475px;
   border-radius: 1.2em;
   z-index: 10;
   color: white;
   background: rgb(120, 163, 170, 0.6);
-  padding: 1.5em 2.5em;
+  padding: 1.5em 2em;
 }
 
 .inset-tagline {
@@ -432,6 +437,7 @@ section + section {
   margin-bottom: 0;
   font-size: 1.1rem;
   padding-left: 1.5rem;
+  /* line-height: 1.45rem; */
 }
 
 .description-even {
@@ -439,6 +445,7 @@ section + section {
   margin-bottom: 0;
   font-size: 1.1rem;
   padding-right: 1.5rem;
+  /* line-height: 1.45rem; */
 }
 
 .tech-container {
@@ -495,7 +502,7 @@ section + section {
 
 .links {
   width: 100%;
-  /* border: 1px solid green; */
+  border: 1px solid green;
   margin-top: 0.5rem;
 }
 
@@ -503,15 +510,16 @@ section + section {
   display: flex;
   list-style: none;
   margin-bottom: 0;
-  /* border: 1px solid yellow; */
+  border: 1px solid yellow;
   padding: 0;
   margin: 0;
 }
 
 .links > ul li {
   font-size: 1.2rem;
-  /* margin: 0em 0em 0em 1em; */
+  margin: 0em 0em 0em 1em;
   margin-top: 0;
+  border: 1px solid red;
 }
 
 .links > ul li + li {
@@ -537,6 +545,7 @@ section + section {
 
 .links-even > ul > li {
   margin-right: 1rem;
+  margin-left: 0;
   /* border: 1px pink solid; */
 }
 
@@ -548,7 +557,7 @@ section + section {
 }
 
 .links img {
-  width: 33px;
+  width: 30px;
   /* border: 1px solid red; */
 }
 
