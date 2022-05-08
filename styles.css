@@ -502,7 +502,7 @@ section + section {
 
 .links {
   width: 100%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   margin-top: 0.5rem;
 }
 
@@ -510,7 +510,7 @@ section + section {
   display: flex;
   list-style: none;
   margin-bottom: 0;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   padding: 0;
   margin: 0;
 }
@@ -519,7 +519,7 @@ section + section {
   font-size: 1.2rem;
   margin: 0em 0em 0em 1em;
   margin-top: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .links > ul li + li {
@@ -641,5 +641,131 @@ section + section {
 @media only screen and (min-width: 1320px) {
   body {
     margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1274px) {
+  .inset-tagline {
+    font-size: 1.15rem;
+  }
+
+  .project-name {
+    font-size: 1.55rem;
+    margin-top: 0.54rem;
+  }
+
+  .description-even,
+  .description-odd {
+    font-size: 1.15rem;
+    margin-top: 0.54rem;
+  }
+
+  .tech-container {
+    margin-top: 0.54rem;
+  }
+}
+
+@media only screen and (min-width: 1308px) {
+  .inset-tagline {
+    font-size: 1.15rem;
+  }
+
+  .project-name {
+    font-size: 1.55rem;
+    margin-top: 0.56rem;
+  }
+
+  .description-even,
+  .description-odd {
+    font-size: 1.16rem;
+    margin-top: 0.56rem;
+  }
+
+  .tech-container {
+    margin-top: 0.56rem;
+  }
+}
+
+@media only screen and (min-width: 1314px) {
+  .inset-tagline {
+    font-size: 1.15rem;
+  }
+
+  .project-name {
+    font-size: 1.57rem;
+    margin-top: 0.56rem;
+  }
+
+  .description-even,
+  .description-odd {
+    font-size: 1.18rem;
+    margin-top: 0.56rem;
+  }
+
+  .tech-container {
+    margin-top: 0.56rem;
+  }
+}
+
+@media only screen and (min-width: 1328px) {
+  .inset-tagline {
+    font-size: 1.15rem;
+  }
+
+  .project-name {
+    font-size: 1.57rem;
+    margin-top: 0.57rem;
+  }
+
+  .description-even,
+  .description-odd {
+    font-size: 1.19rem;
+    margin-top: 0.57rem;
+  }
+
+  .tech-container {
+    margin-top: 0.57rem;
+  }
+}
+
+@media only screen and (min-width: 1334px) {
+  .inset-tagline {
+    font-size: 1.15rem;
+  }
+
+  .project-name {
+    font-size: 1.57rem;
+    margin-top: 0.58rem;
+  }
+
+  .description-even,
+  .description-odd {
+    font-size: 1.2rem;
+    margin-top: 0.58rem;
+  }
+
+  .tech-container {
+    margin-top: 0.58rem;
+  }
+}
+
+@media only screen and (min-width: 1341px) {
+  .inset-tagline {
+    font-size: 1.19rem;
+  }
+
+  .project-name {
+    font-size: 1.74rem;
+    margin-top: 0.9rem;
+  }
+
+  .description-even,
+  .description-odd {
+    font-size: 1.2rem;
+    margin-top: 0.9rem;
+  }
+
+  .tech-container {
+    margin-top: 0.9rem;
   }
 }
