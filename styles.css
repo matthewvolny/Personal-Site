@@ -233,7 +233,7 @@ section + section {
 .project {
   display: flex;
   /* justify-content: space-between; */
-  /* border: 1px solid tan; */
+  border: 1px solid tan;
   height: 550px;
   /* position: relative; */
 }
@@ -284,6 +284,7 @@ section + section {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  /* margin-right: 0 !important; */
 }
 
 .swiper-slide img {
@@ -306,8 +307,8 @@ section + section {
   width: 100%;
   padding-top: 25px;
   padding-bottom: 12.5px;
-  padding-right: 35%;
-  padding-left: 35%;
+  padding-right: 30%;
+  padding-left: 30%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -359,15 +360,15 @@ section + section {
 } */
 
 .project-odd > .project-image-container {
-  width: calc(61% + 0px);
+  width: calc(62% + 0px);
   object-fit: cover;
   overflow: hidden;
-  border: 1px solid rgb(246, 246, 246);
+  /* border: 1px solid rgb(246, 246, 246); */
   height: 475px;
   border-radius: 1.5em;
-  background-color: rgb(137, 146, 176);
+  /* background-color: rgb(137, 146, 176); */
   max-width: 617px;
-  /* z-index: 50; */
+  z-index: 50;
   box-shadow: 0 3px 10px rgba(147, 147, 147, 0.1);
 }
 
@@ -381,7 +382,7 @@ section + section {
   text-align: right;
   position: relative;
   /* position: absolute; */
-  width: 45%;
+  width: 44%;
   right: 0;
   margin-left: -50px;
   /* margin-top: 5em; */
@@ -404,7 +405,7 @@ section + section {
   text-align: right;
   position: relative;
   /* position: absolute; */
-  width: 61%;
+  width: 62%;
   right: 0;
   margin-left: -50px;
   /* margin-top: 5em; */
@@ -423,7 +424,7 @@ section + section {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  width: calc(49% + 0px);
+  width: calc(44% + 0px);
   object-fit: cover;
   overflow: hidden;
   /* border: 1px solid red; */
@@ -783,3 +784,42 @@ section + section {
     margin-top: 0.9rem;
   }
 }
+
+@media only screen and (min-width: 1310px) {
+  .project-odd > .project-details,
+  .project-even > .project-details {
+    width: 44.6%;
+  }
+}
+
+@media only screen and (min-width: 1325px) {
+  .project-odd > .project-details,
+  .project-even > .project-details {
+    width: 45.5%;
+  }
+}
+
+@media only screen and (min-width: 1340px) {
+  .project-odd > .project-details,
+  .project-even > .project-details {
+    width: 46.3%;
+  }
+}
+
+@media only screen and (min-width: 1355px) {
+  .project-odd > .project-details,
+  .project-even > .project-details {
+    width: 47.3%;
+  }
+}
+
+@media only screen and (min-width: 1385px) {
+  .project-odd > .project-details,
+  .project-even > .project-details {
+    width: 48.3%;
+  }
+}
+
+/*  */
+/*  */
+/*  */
