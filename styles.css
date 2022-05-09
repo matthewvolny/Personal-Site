@@ -237,6 +237,7 @@ section + section {
   height: 550px;
   /* position: relative; */
 }
+
 .project + .project {
   margin-top: 3.5rem;
 }
