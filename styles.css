@@ -233,7 +233,7 @@ section + section {
 .project {
   display: flex;
   /* justify-content: space-between; */
-  border: 1px solid tan;
+  /* border: 1px solid tan; */
   height: 550px;
   /* position: relative; */
 }
@@ -412,11 +412,12 @@ section + section {
   align-self: flex-end;
   height: 475px;
   border-radius: 1.5em;
-  border: 1px solid rgb(255, 168, 133, 1);
+  /* border: 1px solid rgb(255, 168, 133, 1); */
   object-fit: cover;
   overflow: hidden;
   max-width: 617px;
-  /* box-shadow: 0 3px 10px rgba(147, 147, 147, 0.1); */
+  z-index: 50;
+  box-shadow: 0 3px 10px rgba(147, 147, 147, 0.1);
 }
 
 .project-even > .project-details {
@@ -429,11 +430,12 @@ section + section {
   overflow: hidden;
   /* border: 1px solid red; */
   height: 475px;
-  border-radius: 1.5em;
+  /* border-radius: 1.5em; */
   z-index: 10;
   color: white;
   background-color: rgb(120, 163, 170, 0.6);
   padding: 1.5em 2em;
+  box-shadow: 0 3px 10px rgba(147, 147, 147, 0.1);
 }
 
 .inset-tagline {
