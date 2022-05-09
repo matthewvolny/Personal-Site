@@ -23,7 +23,7 @@ body {
   margin: 0;
   font-size: 1.2rem;
   /* border: 1px solid red; */
-  min-width: 925px;
+  /* min-width: 925px; */
   max-width: 1095px;
 }
 
@@ -826,3 +826,100 @@ section + section {
 /*  */
 /*  */
 /*  */
+
+@media only screen and (max-width: 1210px) {
+  .project {
+    display: flex;
+    /* display: block; */
+    height: 775px;
+    border: 1px solid green;
+  }
+
+  .project-odd > .project-image-container {
+    width: 61.85%;
+    object-fit: cover;
+    overflow: hidden;
+    /* border: 1px solid rgb(255, 0, 0); */
+    height: 475px;
+    border-radius: 1.5em;
+    min-width: 570px;
+    z-index: 50;
+    /* z-index: -10; */
+    box-shadow: 0 3px 10px rgba(147, 147, 147, 0.1);
+    align-self: flex-end;
+  }
+
+  .project-odd > .project-details {
+    text-align: right;
+    position: relative;
+    /* position: absolute; */
+    /* width: 65.5%; */
+    width: 70%;
+    right: 0;
+    margin-left: -300px;
+    /* margin-top: 5em; */
+    align-self: flex-start;
+    margin-top: 0;
+    height: 475px;
+    background: rgb(120, 163, 170, 0.6);
+    padding: 1.5em 2em;
+    color: white;
+    /* border-radius: 1.5em; */
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-shadow: 0 3px 10px rgba(147, 147, 147, 0.1);
+    z-index: 10;
+  }
+
+  .project-even > .project-image-container {
+    text-align: right;
+    position: relative;
+    /* position: absolute; */
+    width: 61.85%;
+    right: 0;
+    margin-left: -300px;
+    /* margin-top: 5em; */
+    align-self: flex-end;
+    height: 475px;
+    border-radius: 1.5em;
+    /* border: 1px solid rgb(255, 168, 133, 1); */
+    object-fit: cover;
+    overflow: hidden;
+    /* max-width: 617px; */
+    min-width: 570px;
+    z-index: 50;
+    box-shadow: 0 3px 10px rgba(147, 147, 147, 0.1);
+  }
+
+  .project-even > .project-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 70%;
+    object-fit: cover;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    height: 475px;
+    /* border-radius: 1.5em; */
+    z-index: 10;
+    color: white;
+    background-color: rgb(120, 163, 170, 0.6);
+    padding: 1.5em 2em;
+    box-shadow: 0 3px 10px rgba(147, 147, 147, 0.1);
+  }
+
+  .tech-odd {
+    /* border: 1px solid red; */
+    width: 45%;
+    margin-left: auto;
+  }
+
+  .tech-even {
+    /* border: 1px solid red; */
+    width: 45%;
+  }
+}
