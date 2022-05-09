@@ -108,7 +108,12 @@ header {
   margin-top: 0.8rem;
 } */
 
+.create-things-tagline {
+  /* line-height: 2.5rem; */
+}
+
 .intro-blurb {
+  margin-top: 1.3rem;
   /* line-height: 1.6rem; */
   width: 55%;
   /* border: 1px solid yellowgreen; */
@@ -149,11 +154,12 @@ section + section {
 }
 
 .name + div {
-  margin-top: 1.9rem;
+  margin-top: 1.4rem;
   color: #8992b0;
   font-size: 2.5em;
   /* margin-top: 0.1em; */
   /* border: 1px solid green; */
+  line-height: 3rem;
 }
 
 .about-me-flex {
@@ -1376,3 +1382,37 @@ section + section {
     font-size: 1rem;
   }
 }
+
+@media only screen and (max-width: 728px) {
+  .main-nav {
+    height: 100%;
+    margin: 0;
+  }
+  .main-nav > ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-nav > ul li {
+    margin: 0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    list-style: none;
+    display: block;
+  }
+
+  .main-nav > ul li a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+/* @media only screen and (max-width: 984px) {
+  .create-things-tagline {
+    line-height: 2.5rem;
+  }
+} */
