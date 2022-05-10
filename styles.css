@@ -46,18 +46,15 @@ header {
 }
 
 /* come back to this */
-/* .nav-button:hover {
-  background-color: rgb(0, 140, 134, 0.1);
-  border-radius: 0.75em;
-  padding: 0.3em 0.7em;
-  border: rgb(0, 140, 134, 0.2) solid 1px;
+.nav-button:hover {
   cursor: pointer;
-  color: white;
-} */
+  color: #008c86;
+}
 
 .main-nav {
   height: 100%;
   margin: 0;
+  /* border: 1px solid green; */
 }
 .main-nav > ul {
   height: 100%;
@@ -1426,26 +1423,99 @@ section + section {
   }
 }
 
-.hamburger-nav {
-  display: none;
-}
+/*  */
 
 .hamburger-nav ul > li {
+  height: 100%;
   /* border: 1px solid orange; */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 0;
+  padding: 0.55rem;
+  margin: 0;
 }
 
-.hamburger > img {
+/* .hamburger > img {
   width: 40px;
-  /* border: 1px solid purple; */
+} */
+
+/* .hamburger > img:hover {
+  background-color: rgb(137, 146, 176, 0.7);
+} */
+
+.hamburger-nav {
+  display: none;
 }
 
-.hamburger > img:hover {
-  background-color: rgb(137, 146, 176, 0.7);
+#nav-icon3:hover {
+  /* background-color: rgb(137, 146, 176, 0.7); */
 }
+
+/*  */
+/*  */
+#nav-icon3 {
+  /* border: 1px solid purple; */
+  width: 42px;
+  height: 100%;
+  position: relative;
+  /* margin: 50px auto; */
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-icon3 span {
+  margin-top: 0;
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #008c86;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+  top: 15px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 30px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 15px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 15px;
+  width: 0%;
+  left: 50%;
+}
+
+/*  */
+/*  */
 
 .nav-dropdown {
   display: none;

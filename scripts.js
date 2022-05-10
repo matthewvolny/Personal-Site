@@ -100,7 +100,9 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-let hamburgerButton = document.querySelector(".hamburger > img");
+// let hamburgerButton = document.querySelector(".hamburger > img");
+let hamburgerButton = document.querySelector("#nav-icon3");
+
 let navDropdown = document.querySelector(".nav-dropdown");
 
 let dropdownToggle = false;
@@ -108,12 +110,20 @@ let dropdownToggle = false;
 hamburgerButton.addEventListener("click", () => {
   if (dropdownToggle === false) {
     navDropdown.style.display = "block";
+    hamburgerButton.setAttribute("class", "open");
     dropdownToggle = true;
   } else {
     navDropdown.style.display = "none";
+    hamburgerButton.removeAttribute("class", "open");
     dropdownToggle = false;
   }
 });
+
+// $(document).ready(function () {
+//   $("#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4").click(function () {
+//     $(this).toggleClass("open");
+//   });
+// });
 
 const navDropdownItems = document.querySelectorAll(".nav-dropdown > ul li > a");
 
