@@ -102,8 +102,8 @@ var swiper = new Swiper(".mySwiper", {
 
 // let hamburgerButton = document.querySelector(".hamburger > img");
 let hamburgerButton = document.querySelector("#nav-icon3");
-
 let navDropdown = document.querySelector(".nav-dropdown");
+let introSection = document.querySelector(".intro");
 
 let dropdownToggle = false;
 
@@ -111,10 +111,12 @@ hamburgerButton.addEventListener("click", () => {
   if (dropdownToggle === false) {
     navDropdown.style.display = "block";
     hamburgerButton.setAttribute("class", "open");
+    introSection.style.marginTop = "2rem";
     dropdownToggle = true;
   } else {
     navDropdown.style.display = "none";
     hamburgerButton.removeAttribute("class", "open");
+    introSection.style.marginTop = "16vh";
     dropdownToggle = false;
   }
 });
@@ -134,3 +136,7 @@ for (let i = 0; i < navDropdownItems.length; i++) {
     navDropdown.style.display = "none";
   });
 }
+
+const siteLinksSmallerWidths = document.querySelectorAll(
+  "#site-links-smaller-widths"
+);

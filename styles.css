@@ -3,11 +3,12 @@
   font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
     sans-serif;
   color: #8992b0;
+  /* letter-spacing: -0.01rem; */
   letter-spacing: 0.02rem;
   line-height: 1.5rem;
   margin: 2.2em 7.3em 2.2em 7.5em;
-  /* font-family: "Inter", sans-serif;
-  font-weight: 600; */
+  /* font-family: "Inter", sans-serif; */
+  /* font-weight: 500; */
 }
 
 * {
@@ -646,19 +647,44 @@ section + section {
   cursor: pointer;
 }
 
-.footer > div {
+.built-by {
   color: #008c86;
   width: 100%;
   text-align: center;
   margin-top: 4rem;
 }
 
-.personal-site-github-link {
+/*  */
+.footer-links {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center; /**/
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  width: 217px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*  */
+
+#site-links-smaller-widths {
+  display: none;
+}
+
+.personal-site-links {
   /* border: 1px solid violet; */
-  margin-top: 0.9rem;
+  /* margin-top: 0.9rem; */
+  margin-top: 0;
   display: block;
   text-align: center;
-  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.personal-site-github-link {
+  width: 25px;
 }
 
 /*   max-width: 1325px; */
@@ -1659,17 +1685,11 @@ section + section {
   :root {
     margin: 2.2em 6.3em 2.2em 6.5em;
   }
-  .sidebar {
-    display: none;
-  }
 }
 
 @media only screen and (min-width: 616px) and (max-width: 703px) {
   :root {
     margin: 2.2em 5.3em 2.2em 5.5em;
-  }
-  .sidebar {
-    display: none;
   }
 }
 
@@ -1677,26 +1697,17 @@ section + section {
   :root {
     margin: 2.2em 4.3em 2.2em 4.5em;
   }
-  .sidebar {
-    display: none;
-  }
 }
 
 @media only screen and (min-width: 542px) and (max-width: 578px) {
   :root {
     margin: 2.2em 3.3em 2.2em 3.5em;
   }
-  .sidebar {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 541px) {
   :root {
     margin: 2.2em 2.3em 2.2em 2.5em;
-  }
-  .sidebar {
-    display: none;
   }
 }
 
@@ -1705,9 +1716,6 @@ section + section {
     margin: 2.2em 2.3em 2.2em 2.5em;
     font-size: 1.1rem;
   }
-  .sidebar {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 482px) {
@@ -1715,9 +1723,7 @@ section + section {
     margin: 2.2em 2.3em 2.2em 2.5em;
     font-size: 1.1rem;
   }
-  .sidebar {
-    display: none;
-  }
+
   .name {
     /* margin-top: 1.5rem; */
     color: #ccd6f6;
@@ -1877,8 +1883,10 @@ section + section {
 
 .nav-dropdown {
   display: none;
+  /* position: absolute; */
   /* border: 1px solid orangered; */
   background-color: rgb(137, 146, 176, 0.7);
+  box-shadow: 0 3px 10px rgba(147, 147, 147, 0.1);
 }
 
 .nav-dropdown > ul {
@@ -1929,5 +1937,17 @@ section + section {
   }
   .hamburger-nav {
     display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 803px) {
+  .sidebar {
+    display: none;
+  }
+  #site-links-smaller-widths {
+    display: contents;
+  }
+  .footer-links {
+    justify-content: space-between;
   }
 }
