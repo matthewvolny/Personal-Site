@@ -99,3 +99,28 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+let hamburgerButton = document.querySelector(".hamburger > img");
+let navDropdown = document.querySelector(".nav-dropdown");
+
+let dropdownToggle = false;
+
+hamburgerButton.addEventListener("click", () => {
+  if (dropdownToggle === false) {
+    navDropdown.style.display = "block";
+    dropdownToggle = true;
+  } else {
+    navDropdown.style.display = "none";
+    dropdownToggle = false;
+  }
+});
+
+const navDropdownItems = document.querySelectorAll(".nav-dropdown > ul li > a");
+
+for (let i = 0; i < navDropdownItems.length; i++) {
+  navDropdownItems[i].addEventListener("click", (e) => {
+    console.log(e.target.textContent);
+    dropdownToggle = false;
+    navDropdown.style.display = "none";
+  });
+}
