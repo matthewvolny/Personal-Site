@@ -6,6 +6,8 @@
   letter-spacing: 0.02rem;
   line-height: 1.5rem;
   margin: 2.2em 7.3em 2.2em 7.5em;
+  /* font-family: "Inter", sans-serif;
+  font-weight: 600; */
 }
 
 * {
@@ -110,7 +112,7 @@ header {
 }
 
 .intro-blurb {
-  margin-top: 0.9rem;
+  margin-top: 0.8rem;
   /* line-height: 1.6rem; */
   width: 55%;
   /* border: 1px solid yellowgreen; */
@@ -147,16 +149,17 @@ section + section {
   /* margin-top: 1.5rem; */
   color: #ccd6f6;
   font-size: 2.5em;
+  /* font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,; */
   /* border: 1px solid purple; */
 }
 
 .name + div {
-  margin-top: 1.4rem;
+  margin-top: 1.3rem;
   color: #8992b0;
   font-size: 2.5em;
   /* margin-top: 0.1em; */
   /* border: 1px solid green; */
-  line-height: 3rem;
+  line-height: 3.3rem;
 }
 
 .about-me-flex {
@@ -1350,7 +1353,7 @@ section + section {
   } */
 }
 
-@media only screen and (max-width: 866px) {
+@media only screen and (min-width: 804px) and (max-width: 866px) {
   /* add top margin to other elements in about me */
 
   .about-me-flex {
@@ -1358,6 +1361,181 @@ section + section {
     width: 100%;
     height: 100%;
     /* border: 1px solid pink; */
+    position: relative;
+  }
+
+  .intro-and-skills-flex {
+    width: 100%;
+    /* border: 1px solid red; */
+    /* height: 63%; */
+    padding-right: 0rem;
+  }
+
+  .profile-image-container {
+    /* margin-top: 0.5rem; */
+    position: absolute;
+    right: 0px;
+    top: 280px;
+    width: 60%;
+    /* border: 1px solid rgb(0, 47, 255); */
+    z-index: 5;
+    /* margin-bottom: 1.25rem; */
+  }
+
+  /* .profile-image-container > img {
+    width: 91%;
+  } */
+  /* 
+  .profile-image-background {
+    margin-top: 0;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 91%;
+    background-color: #008c86;
+    z-index: -1;
+    transition: all 0.3s;
+  } */
+
+  .listed-skills-flex {
+    width: 40% !important;
+    height: 100%;
+    margin-top: 1.5rem;
+    /* border: 1px solid blueviolet; */
+  }
+
+  .listed-skills-flex li {
+    margin-right: 10%;
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 758px) and (max-width: 803px) {
+  /* add top margin to other elements in about me */
+
+  .about-me-flex {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid pink; */
+    position: relative;
+  }
+
+  .intro-and-skills-flex {
+    width: 100%;
+    /* border: 1px solid red; */
+    /* height: 63%; */
+    padding-right: 0rem;
+  }
+
+  .profile-image-container {
+    /* margin-top: 0.5rem; */
+    position: absolute;
+    right: 0px;
+    top: 315px;
+    width: 60%;
+    /* border: 1px solid rgb(0, 47, 255); */
+    z-index: 5;
+    /* margin-bottom: 1.25rem; */
+  }
+
+  /* .profile-image-container > img {
+    width: 91%;
+  } */
+  /* 
+  .profile-image-background {
+    margin-top: 0;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 91%;
+    background-color: #008c86;
+    z-index: -1;
+    transition: all 0.3s;
+  } */
+
+  .listed-skills-flex {
+    width: 40% !important;
+    height: 100%;
+    margin-top: 1.5rem;
+    /* border: 1px solid blueviolet; */
+  }
+
+  .listed-skills-flex li {
+    margin-right: 10%;
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 719px) and (max-width: 757px) {
+  /* add top margin to other elements in about me */
+
+  .about-me-flex {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid pink; */
+    position: relative;
+  }
+
+  .intro-and-skills-flex {
+    width: 100%;
+    /* border: 1px solid red; */
+    /* height: 63%; */
+    padding-right: 0rem;
+  }
+
+  .profile-image-container {
+    /* margin-top: 0.5rem; */
+    position: absolute;
+    right: 0px;
+    top: 345px;
+    width: 60%;
+    /* border: 1px solid rgb(0, 47, 255); */
+    z-index: 5;
+    /* margin-bottom: 1.25rem; */
+  }
+
+  /* .profile-image-container > img {
+    width: 91%;
+  } */
+  /* 
+  .profile-image-background {
+    margin-top: 0;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 91%;
+    background-color: #008c86;
+    z-index: -1;
+    transition: all 0.3s;
+  } */
+
+  .listed-skills-flex {
+    width: 40% !important;
+    height: 100%;
+    margin-top: 1.5rem;
+    /* border: 1px solid blueviolet; */
+  }
+
+  .listed-skills-flex li {
+    margin-right: 10%;
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 707px) and (max-width: 718px) {
+  /* add top margin to other elements in about me */
+
+  .about-me-flex {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid pink; */
+    position: relative;
   }
 
   .intro-and-skills-flex {
@@ -1369,18 +1547,21 @@ section + section {
 
   .profile-image-container {
     margin-top: 0.5rem;
-    width: 60%;
+    /* position: absolute; */
+    /* right: 0px;
+    top: 345px; */
+    width: 70%;
     /* border: 1px solid rgb(0, 47, 255); */
-    position: relative;
     z-index: 5;
-    margin-bottom: 1.25rem;
-    /* margin: 0 auto; */
+    margin-bottom: 1.1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .profile-image-container > img {
+  /* .profile-image-container > img {
     width: 91%;
-  }
-
+  } */
+  /* 
   .profile-image-background {
     margin-top: 0;
     position: absolute;
@@ -1390,29 +1571,173 @@ section + section {
     background-color: #008c86;
     z-index: -1;
     transition: all 0.3s;
-  }
-
-  /* 
+  } */
 
   .listed-skills-flex {
     width: 100% !important;
-    height: 50px;
+    height: 145px;
     margin-top: 1.5rem;
+    /* border: 1px solid blueviolet; */
   }
 
   .listed-skills-flex li {
-    margin-right: 10%;
+    margin-right: 11%;
     margin-top: 0;
     margin-bottom: 0.9rem;
-  } */
-}
-
-@media only screen and (max-width: 730px) {
-  :root {
-    font-size: 1rem;
   }
 }
 
+@media only screen and (max-width: 706px) {
+  /* add top margin to other elements in about me */
+
+  .about-me-flex {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid pink; */
+    position: relative;
+  }
+
+  .intro-and-skills-flex {
+    width: 100%;
+    /* border: 1px solid red; */
+    /* height: 63%; */
+    padding-right: 0rem;
+  }
+
+  .profile-image-container {
+    margin-top: 0.5rem;
+    /* position: absolute; */
+    /* right: 0px;
+    top: 345px; */
+    width: 70%;
+    /* border: 1px solid rgb(0, 47, 255); */
+    z-index: 5;
+    margin-bottom: 1.1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* .profile-image-container > img {
+    width: 91%;
+  } */
+  /* 
+  .profile-image-background {
+    margin-top: 0;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 91%;
+    background-color: #008c86;
+    z-index: -1;
+    transition: all 0.3s;
+  } */
+
+  .listed-skills-flex {
+    width: 100% !important;
+    height: 195px;
+    margin-top: 1.5rem;
+    /* border: 1px solid blueviolet; */
+    font-size: 1.2rem;
+  }
+
+  .listed-skills-flex li {
+    margin-right: 11%;
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+  }
+}
+
+/* reduce overall font size */
+@media only screen and (max-width: 838px) {
+  :root {
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (max-width: 803px) {
+  :root {
+    margin: 2.2em 6.3em 2.2em 6.5em;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 616px) and (max-width: 703px) {
+  :root {
+    margin: 2.2em 5.3em 2.2em 5.5em;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  :root {
+    margin: 2.2em 4.3em 2.2em 4.5em;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 542px) and (max-width: 578px) {
+  :root {
+    margin: 2.2em 3.3em 2.2em 3.5em;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 541px) {
+  :root {
+    margin: 2.2em 2.3em 2.2em 2.5em;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 483px) and (max-width: 504px) {
+  :root {
+    margin: 2.2em 2.3em 2.2em 2.5em;
+    font-size: 1.1rem;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 482px) {
+  :root {
+    margin: 2.2em 2.3em 2.2em 2.5em;
+    font-size: 1.1rem;
+  }
+  .sidebar {
+    display: none;
+  }
+  .name {
+    /* margin-top: 1.5rem; */
+    color: #ccd6f6;
+    font-size: 2.3em;
+    /* font-weight: 600; */
+    /* border: 1px solid purple; */
+  }
+
+  .name + div {
+    margin-top: 1.3rem;
+    color: #8992b0;
+    font-size: 2.3em;
+    /* font-weight: 600; */
+    /* margin-top: 0.1em; */
+    /* border: 1px solid green; */
+    line-height: 3.3rem;
+  }
+}
+
+/*  */
 @media only screen and (max-width: 728px) {
   .main-nav {
     height: 100%;
