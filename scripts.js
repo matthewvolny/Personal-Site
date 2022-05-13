@@ -149,7 +149,8 @@ let lastWindowWidth;
 let slideShowContainerRatio = 1.24;
 
 const scaleSlideShowContainer = (width) => {
-  if (width <= "935") {
+  if (width <= 934) {
+    console.log("running under 935");
     let slideShowContainer = document.querySelector(
       ".project-odd > .project-image-container"
     );
@@ -173,8 +174,10 @@ const scaleSlideShowContainer = (width) => {
   }
 };
 
+// for the project description box
 const scaleProjectImageContainer = (currentWidth) => {
-  if (currentWidth >= 986 && currentWidth <= 1275) {
+  if (currentWidth >= 986 && currentWidth <= 1276) {
+    // console.log("running between 986 and 1276");
     const projectImageContainer = document.querySelector(
       ".project-odd > .project-image-container"
     );
@@ -182,15 +185,15 @@ const scaleProjectImageContainer = (currentWidth) => {
     const projectImageContainerWidth = projectImageContainer.offsetWidth;
     const bodyWidth = body.offsetWidth;
     const projectImageDiff = bodyWidth - projectImageContainerWidth;
-    console.log("projectImageDiff");
-    console.log(projectImageDiff);
+    // console.log("projectImageDiff");
+    // console.log(projectImageDiff);
     const projectDescriptionDiff =
       bodyWidth -
       document.querySelector(".project-odd > .project-details").offsetWidth;
-    console.log("projectDescriptionDiff");
-    console.log(projectDescriptionDiff);
+    // console.log("projectDescriptionDiff");
+    // console.log(projectDescriptionDiff);
     projectImageContainer.style.marginLeft = `-${
-      600 - (projectImageDiff - /*projectDescriptionDiff*/ 52)
+      600 - (projectImageDiff - /*projectDescriptionDiff*/ 62)
     }px`;
   } else {
   }
@@ -241,7 +244,7 @@ var myEfficientFn = debounce(function () {
     window.innerWidth
   );
   scaleSlideShowContainer(window.innerWidth);
-  scaleProjectImageContainer(window.innerWidth);
+  // scaleProjectImageContainer(window.innerWidth);
 }, 1);
 
 // window.addEventListener("resize", myEfficientFn);

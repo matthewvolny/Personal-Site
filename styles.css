@@ -662,6 +662,43 @@ section + section {
   /* border: 1px solid red; */
 }
 
+@media only screen and (max-width: 1276px) {
+  .project {
+    height: 875px;
+  }
+
+  .project-odd > .project-image-container {
+    height: 525px;
+    /* width: 100%; */
+    max-width: 660px;
+    min-width: 660px;
+    /* margin-left: -400px; */
+  }
+
+  /* height: 550px;
+  width: 100%;
+  min-width: 685px; */
+}
+
+@media only screen and (max-width: 1215px) {
+  .project-odd > .project-details {
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .project-odd > .project-details {
+    height: 425px;
+  }
+}
+
+@media only screen and (max-width: 1035px) {
+  .project-odd > .project-details {
+    height: 415px;
+  }
+}
+/*  */
+
 @media only screen and (max-width: 985px) {
   .project {
     display: flex;
@@ -688,6 +725,18 @@ section + section {
   }
 }
 
+@media only screen and (min-width: 1277px) {
+  .project-odd > .project-image-container {
+    max-height: 550px !important;
+  }
+}
+
+@media only screen and (min-width: 936px) {
+  .project-odd > .project-image-container {
+    max-height: 524px !important;
+  }
+}
+
 @media only screen and (max-width: 935px) {
   .project {
     display: flex;
@@ -703,6 +752,8 @@ section + section {
     /* - diff in width in pixels */
     width: 100%;
     min-width: 0px;
+    /* !!! */
+    max-width: 100%;
     /* object-fit: fill; */
     /* overflow: hidden; */
     /* border: 1px solid red; */
@@ -2032,35 +2083,3 @@ section + section {
 }
 
 /*  */
-@media only screen and (max-width: 1276px) {
-  .project {
-    height: 875px;
-  }
-
-  /* .project-odd > .project-details {
-    height: 425px;
-  } */
-
-  .project-odd > .project-image-container {
-    height: 525px;
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 1215px) {
-  .project-odd > .project-details {
-    height: 450px;
-  }
-}
-
-@media only screen and (max-width: 1140px) {
-  .project-odd > .project-details {
-    height: 425px;
-  }
-}
-
-@media only screen and (max-width: 1035px) {
-  .project-odd > .project-details {
-    height: 415px;
-  }
-}
