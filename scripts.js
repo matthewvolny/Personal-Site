@@ -144,78 +144,79 @@ const siteLinksSmallerWidths = document.querySelectorAll(
 //
 //
 //
+
 let lastWindowWidth;
-// let lastSlideShowContainerWidth;
-let slideShowContainerRatio = 1.24;
+
+//adjusts project image aspect ratio (becomes taller at smaller widths)
+let slideShowContainerInitialRatio = 1.2029; //more narrow
+let slideShowContainerSecondRatio = 1.19;
+let slideShowContainerThirdRatio = 1.178;
+let slideShowContainerFourthRatio = 1.162;
+let slideShowContainerFifthRatio = 1.155;
+let slideShowContainerSixthRatio = 1.145; //less narrow
 
 const scaleSlideShowContainer = (width) => {
-  if (width <= 934) {
-    console.log("running under 935");
-    let slideShowContainer = document.querySelector(
-      ".project-odd > .project-image-container"
-    );
-    let slideShowContainerHeight = slideShowContainer.offsetHeight;
-    let slideShowContainerWidth = slideShowContainer.offsetWidth;
-    console.log("slideShowContainerHeight");
-    console.log(slideShowContainerHeight);
-    console.log("slideShowContainerWidth");
-    console.log(slideShowContainerWidth);
-    let newHeight = slideShowContainerWidth / slideShowContainerRatio;
-    console.log("newHeight");
-    console.log(newHeight);
+  let slideShowContainer = document.querySelector(
+    ".project-odd > .project-image-container"
+  );
+  let slideShowContainerHeight = slideShowContainer.offsetHeight;
+  let slideShowContainerWidth = slideShowContainer.offsetWidth;
+
+  if (width > 860 && width <= 934) {
+    let newHeight = slideShowContainerWidth / slideShowContainerInitialRatio;
     slideShowContainer.style.height = `${newHeight}px`;
+    slideShowContainer.style.minHeight = `${newHeight}px`;
+    slideShowContainer.style.maxHeight = `${newHeight}px`;
     lastWindowWidth = width;
-    // console.log("lastWindowWidth last log");
-    // console.log(lastWindowWidth);
+  } else if (width > 785 && width <= 860) {
+    let newHeight = slideShowContainerWidth / slideShowContainerSecondRatio;
+    slideShowContainer.style.height = `${newHeight}px`;
+    slideShowContainer.style.minHeight = `${newHeight}px`;
+    slideShowContainer.style.maxHeight = `${newHeight}px`;
+    lastWindowWidth = width;
+  } else if (width > 700 && width <= 785) {
+    let newHeight = slideShowContainerWidth / slideShowContainerThirdRatio;
+    slideShowContainer.style.height = `${newHeight}px`;
+    slideShowContainer.style.minHeight = `${newHeight}px`;
+    slideShowContainer.style.maxHeight = `${newHeight}px`;
+    lastWindowWidth = width;
+  } else if (width > 595 && width <= 700) {
+    let newHeight = slideShowContainerWidth / slideShowContainerFourthRatio;
+    slideShowContainer.style.height = `${newHeight}px`;
+    slideShowContainer.style.minHeight = `${newHeight}px`;
+    slideShowContainer.style.maxHeight = `${newHeight}px`;
+    lastWindowWidth = width;
+  } else if (width > 530 && width <= 595) {
+    let newHeight = slideShowContainerWidth / slideShowContainerFifthRatio;
+    slideShowContainer.style.height = `${newHeight}px`;
+    slideShowContainer.style.minHeight = `${newHeight}px`;
+    slideShowContainer.style.maxHeight = `${newHeight}px`;
+    lastWindowWidth = width;
+  } else if (width <= 530) {
+    let newHeight = slideShowContainerWidth / slideShowContainerSixthRatio;
+    slideShowContainer.style.height = `${newHeight}px`;
+    slideShowContainer.style.minHeight = `${newHeight}px`;
+    slideShowContainer.style.maxHeight = `${newHeight}px`;
+    lastWindowWidth = width;
   } else {
     lastWindowWidth = width;
-    //!or standard ratio
-    // lastSlideShowContainerWidth = slideShowContainer.offsetWidth;
   }
 };
 
-// for the project description box
+// keeps adjacent space identical for project description and project image containers
 const scaleProjectImageContainer = (currentWidth) => {
-  if (currentWidth >= 986 && currentWidth <= 1276) {
-    // console.log("running between 986 and 1276");
+  if (currentWidth >= 986 && currentWidth <= 1309) {
     const projectImageContainer = document.querySelector(
       ".project-odd > .project-image-container"
     );
     const body = document.querySelector("body");
     const projectImageContainerWidth = projectImageContainer.offsetWidth;
     const bodyWidth = body.offsetWidth;
-    const projectImageDiff = bodyWidth - projectImageContainerWidth;
-    // console.log("projectImageDiff");
-    // console.log(projectImageDiff);
-    const projectDescriptionDiff =
-      bodyWidth -
-      document.querySelector(".project-odd > .project-details").offsetWidth;
-    // console.log("projectDescriptionDiff");
-    // console.log(projectDescriptionDiff);
-    projectImageContainer.style.marginLeft = `-${
-      600 - (projectImageDiff - /*projectDescriptionDiff*/ 62)
-    }px`;
+    const projectImageSpaceToLeft = bodyWidth - projectImageContainerWidth;
+    const projectImageContainerOverlap =
+      projectImageContainerWidth - projectImageSpaceToLeft;
+    projectImageContainer.style.marginLeft = `-${projectImageContainerOverlap}px`;
   } else {
-  }
-  // if (currentWidth >= 1276) {
-  //   const projectImageContainer = document.querySelector(
-  //     ".project-odd > .project-image-container"
-  //   );
-  //   const body = document.querySelector("body");
-  //   const projectImageContainerWidth = projectImageContainer.offsetWidth;
-  //   const bodyWidth = body.offsetWidth;
-  //   const projectImageDiff = bodyWidth - projectImageContainerWidth;
-  //   console.log("projectImageDiff");
-  //   console.log(projectImageDiff);
-  //   const projectDescriptionDiff =
-  //     bodyWidth -
-  //     document.querySelector(".project-odd > .project-details").offsetWidth;
-  //   console.log("projectDescriptionDiff");
-  //   console.log(projectDescriptionDiff);
-  //   projectImageContainer.style.marginLeft = `-${
-  //     600 - (projectImageDiff - /*projectDescriptionDiff*/ 100)
-  //   }px`;
-  // }
 };
 
 //sets page width to state!
