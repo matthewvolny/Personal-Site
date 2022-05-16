@@ -264,6 +264,7 @@ let expandProjectButton = document.querySelector(".expand-project-button");
 let secondProjectSentence = document.querySelector(".second-project-sentence");
 
 expandProjectButton.addEventListener("click", () => {
-  secondProjectSentence.style.display = "contents";
+  // secondProjectSentence.removeAttribute("display");
+  secondProjectSentence.setAttribute("id", "show-sentence");
   expandProjectButton.style.display = "none";
 });
