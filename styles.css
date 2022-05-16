@@ -320,7 +320,7 @@ section + section {
   bottom: 0px;
   width: 100%;
   padding-top: 25px;
-  padding-bottom: 12.5px;
+  padding-bottom: 20px;
   padding-right: 30%;
   padding-left: 30%;
   margin-right: auto;
@@ -332,46 +332,50 @@ section + section {
   justify-content: center !important;
   align-items: center !important;
   font-size: 1rem;
-  color: black;
-  width: 30px !important;
-  height: 30px !important;
+  color: transparent;
+  width: 15px !important;
+  height: 15px !important;
   opacity: 1 !important;
   background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
 .swiper-pagination-bullet-active {
-  color: white;
+  /* color: white; */
   background-color: rgb(0, 155, 155) !important;
 }
 
-/* .swiper-button-prev {
+.swiper-button-prev {
   color: rgb(0, 140, 134) !important;
-  left: 30% !important;
-  top: 428px !important;
+  left: 5.1% !important;
+  /* top: 428px !important; */
   z-index: 100 !important;
+  /* border: 1px solid orange; */
+  font-weight: 100 !important;
 }
 
 .swiper-button-next {
   color: rgb(0, 140, 134) !important;
-  right: 30% !important;
-  top: 428px !important;
+  right: 5.1% !important;
+  /* top: 428px !important; */
   z-index: 100 !important;
+  font-weight: 100 !important;
 }
 
 .swiper-button-prev::after {
-  font-size: 30px !important;
+  font-size: 75px !important;
   z-index: 100 !important;
+  /* border: 1px solid red; */
 }
 
 .swiper-button-next::after {
-  font-size: 30px !important;
+  font-size: 75px !important;
   z-index: 100 !important;
 }
 
 .swiper-button-disabled {
   opacity: 1 !important;
   color: rgb(0, 140, 134, 0.3) !important;
-} */
+}
 
 .project-odd > .project-image-container {
   align-self: flex-end;
@@ -1805,5 +1809,100 @@ section + section {
 @media only screen and (max-width: 366px) {
   .listed-skills-flex li {
     margin-right: 20%;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/* swiper slideshow button */
+@media only screen and (max-width: 900px) {
+  .swiper-pagination {
+    padding-right: 29%;
+    padding-left: 29%;
+  }
+}
+
+@media only screen and (max-width: 785px) {
+  .swiper-pagination {
+    padding-right: 27%;
+    padding-left: 27%;
+  }
+
+  .swiper-button-prev {
+    left: 5.5% !important;
+  }
+
+  .swiper-button-next {
+    right: 5.5% !important;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .swiper-pagination {
+    padding-right: 25.5%;
+    padding-left: 25.5%;
+  }
+
+  .swiper-button-prev {
+    left: 5.8% !important;
+  }
+
+  .swiper-button-next {
+    right: 5.8% !important;
+  }
+  .swiper-button-prev::after {
+    font-size: 67px !important;
+  }
+
+  .swiper-button-next::after {
+    font-size: 67px !important;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  .swiper-pagination {
+    padding-right: 24.5%;
+    padding-left: 24.5%;
+  }
+
+  .swiper-pagination-bullet {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .swiper-button-prev {
+    left: 6.5% !important;
+  }
+
+  .swiper-button-next {
+    right: 6.5% !important;
+  }
+  .swiper-button-prev::after {
+    font-size: 65px !important;
+  }
+
+  .swiper-button-next::after {
+    font-size: 65px !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .swiper-pagination {
+    padding-right: 24%;
+    padding-left: 24%;
+  }
+
+  .swiper-pagination-bullet {
+    width: 13px !important;
+    height: 13px !important;
+  }
+
+  .swiper-button-prev::after {
+    font-size: 60px !important;
+  }
+
+  .swiper-button-next::after {
+    font-size: 60px !important;
   }
 }
