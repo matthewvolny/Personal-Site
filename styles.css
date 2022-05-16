@@ -1432,6 +1432,10 @@ section + section {
     font-size: 1.15rem;
   }
 
+  .lead-in {
+    font-size: 1.35rem;
+  }
+
   .title {
     font-size: 1.6rem;
   }
@@ -1444,6 +1448,10 @@ section + section {
 @media only screen and (max-width: 780px) {
   body {
     font-size: 1.12rem;
+  }
+
+  .lead-in {
+    font-size: 1.32rem;
   }
 
   .title {
@@ -1460,6 +1468,10 @@ section + section {
     font-size: 1.08rem;
   }
 
+  .lead-in {
+    font-size: 1.28rem;
+  }
+
   .title {
     font-size: 1.53rem;
   }
@@ -1474,6 +1486,10 @@ section + section {
     font-size: 1.03rem;
   }
 
+  .lead-in {
+    font-size: 1.23rem;
+  }
+
   .title {
     font-size: 1.48rem;
   }
@@ -1486,6 +1502,10 @@ section + section {
 @media only screen and (max-width: 539px) {
   body {
     font-size: 1rem;
+  }
+
+  .lead-in {
+    font-size: 1.2rem;
   }
 
   .title {
