@@ -1382,11 +1382,27 @@ section + section {
   body {
     font-size: 1.15rem;
   }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .title > span {
+    font-size: 1.55rem;
+  }
 }
 
 @media only screen and (max-width: 780px) {
   body {
     font-size: 1.12rem;
+  }
+
+  .title {
+    font-size: 1.57rem;
+  }
+
+  .title > span {
+    font-size: 1.52rem;
   }
 }
 
@@ -1394,17 +1410,41 @@ section + section {
   body {
     font-size: 1.08rem;
   }
+
+  .title {
+    font-size: 1.53rem;
+  }
+
+  .title > span {
+    font-size: 1.48rem;
+  }
 }
 
 @media only screen and (max-width: 578px) {
   body {
     font-size: 1.03rem;
   }
+
+  .title {
+    font-size: 1.48rem;
+  }
+
+  .title > span {
+    font-size: 1.43rem;
+  }
 }
 
 @media only screen and (max-width: 539px) {
   body {
     font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1.45rem;
+  }
+
+  .title > span {
+    font-size: 1.4rem;
   }
 }
 
