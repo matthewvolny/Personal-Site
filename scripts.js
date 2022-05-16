@@ -215,7 +215,17 @@ const scaleProjectImageContainer = (currentWidth) => {
     const projectImageSpaceToLeft = bodyWidth - projectImageContainerWidth;
     const projectImageContainerOverlap =
       projectImageContainerWidth - projectImageSpaceToLeft;
-    projectImageContainer.style.marginLeft = `-${projectImageContainerOverlap}px`;
+    //!
+    const allProjectImageContainers = document.querySelectorAll(
+      ".project-odd > .project-image-container"
+    );
+    for (let i = 0; i < allProjectImageContainers.length; i++) {
+      allProjectImageContainers[
+        i
+      ].style.marginLeft = `-${projectImageContainerOverlap}px`;
+    }
+    //
+    // projectImageContainer.style.marginLeft = `-${projectImageContainerOverlap}px`;
   } else {
   }
 };
