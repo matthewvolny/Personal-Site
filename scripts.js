@@ -162,41 +162,56 @@ const scaleSlideShowContainer = (width) => {
   let slideShowContainerHeight = slideShowContainer.offsetHeight;
   let slideShowContainerWidth = slideShowContainer.offsetWidth;
 
+  let allSlideShowContainers = document.querySelectorAll(
+    ".project-odd > .project-image-container"
+  );
   if (width > 860 && width <= 934) {
     let newHeight = slideShowContainerWidth / slideShowContainerInitialRatio;
-    slideShowContainer.style.height = `${newHeight}px`;
-    slideShowContainer.style.minHeight = `${newHeight}px`;
-    slideShowContainer.style.maxHeight = `${newHeight}px`;
+    for (let i = 0; i < allSlideShowContainers.length; i++) {
+      allSlideShowContainers[i].style.height = `${newHeight}px`;
+      allSlideShowContainers[i].style.minHeight = `${newHeight}px`;
+      allSlideShowContainers[i].style.maxHeight = `${newHeight}px`;
+    }
     lastWindowWidth = width;
   } else if (width > 785 && width <= 860) {
     let newHeight = slideShowContainerWidth / slideShowContainerSecondRatio;
-    slideShowContainer.style.height = `${newHeight}px`;
-    slideShowContainer.style.minHeight = `${newHeight}px`;
-    slideShowContainer.style.maxHeight = `${newHeight}px`;
+    for (let i = 0; i < allSlideShowContainers.length; i++) {
+      allSlideShowContainers[i].style.height = `${newHeight}px`;
+      allSlideShowContainers[i].style.minHeight = `${newHeight}px`;
+      allSlideShowContainers[i].style.maxHeight = `${newHeight}px`;
+    }
     lastWindowWidth = width;
   } else if (width > 700 && width <= 785) {
     let newHeight = slideShowContainerWidth / slideShowContainerThirdRatio;
-    slideShowContainer.style.height = `${newHeight}px`;
-    slideShowContainer.style.minHeight = `${newHeight}px`;
-    slideShowContainer.style.maxHeight = `${newHeight}px`;
+    for (let i = 0; i < allSlideShowContainers.length; i++) {
+      allSlideShowContainers[i].style.height = `${newHeight}px`;
+      allSlideShowContainers[i].style.minHeight = `${newHeight}px`;
+      allSlideShowContainers[i].style.maxHeight = `${newHeight}px`;
+    }
     lastWindowWidth = width;
   } else if (width > 595 && width <= 700) {
     let newHeight = slideShowContainerWidth / slideShowContainerFourthRatio;
-    slideShowContainer.style.height = `${newHeight}px`;
-    slideShowContainer.style.minHeight = `${newHeight}px`;
-    slideShowContainer.style.maxHeight = `${newHeight}px`;
+    for (let i = 0; i < allSlideShowContainers.length; i++) {
+      allSlideShowContainers[i].style.height = `${newHeight}px`;
+      allSlideShowContainers[i].style.minHeight = `${newHeight}px`;
+      allSlideShowContainers[i].style.maxHeight = `${newHeight}px`;
+    }
     lastWindowWidth = width;
   } else if (width > 530 && width <= 595) {
     let newHeight = slideShowContainerWidth / slideShowContainerFifthRatio;
-    slideShowContainer.style.height = `${newHeight}px`;
-    slideShowContainer.style.minHeight = `${newHeight}px`;
-    slideShowContainer.style.maxHeight = `${newHeight}px`;
+    for (let i = 0; i < allSlideShowContainers.length; i++) {
+      allSlideShowContainers[i].style.height = `${newHeight}px`;
+      allSlideShowContainers[i].style.minHeight = `${newHeight}px`;
+      allSlideShowContainers[i].style.maxHeight = `${newHeight}px`;
+    }
     lastWindowWidth = width;
   } else if (width <= 530) {
     let newHeight = slideShowContainerWidth / slideShowContainerSixthRatio;
-    slideShowContainer.style.height = `${newHeight}px`;
-    slideShowContainer.style.minHeight = `${newHeight}px`;
-    slideShowContainer.style.maxHeight = `${newHeight}px`;
+    for (let i = 0; i < allSlideShowContainers.length; i++) {
+      allSlideShowContainers[i].style.height = `${newHeight}px`;
+      allSlideShowContainers[i].style.minHeight = `${newHeight}px`;
+      allSlideShowContainers[i].style.maxHeight = `${newHeight}px`;
+    }
     lastWindowWidth = width;
   } else {
     lastWindowWidth = width;
@@ -215,7 +230,6 @@ const scaleProjectImageContainer = (currentWidth) => {
     const projectImageSpaceToLeft = bodyWidth - projectImageContainerWidth;
     const projectImageContainerOverlap =
       projectImageContainerWidth - projectImageSpaceToLeft;
-    //!
     const allProjectImageContainers = document.querySelectorAll(
       ".project-odd > .project-image-container"
     );
@@ -224,8 +238,6 @@ const scaleProjectImageContainer = (currentWidth) => {
         i
       ].style.marginLeft = `-${projectImageContainerOverlap}px`;
     }
-    //
-    // projectImageContainer.style.marginLeft = `-${projectImageContainerOverlap}px`;
   } else {
   }
 };
@@ -270,10 +282,17 @@ scaleSlideShowContainer(window.innerWidth);
 scaleProjectImageContainer(window.innerWidth);
 
 //expand second sentence of project description on button click
-let expandProjectButton = document.querySelector(".expand-project-button");
-let secondProjectSentence = document.querySelector(".second-project-sentence");
+let allExpandProjectButtons = document.querySelectorAll(
+  ".expand-project-button"
+);
 
-expandProjectButton.addEventListener("click", () => {
-  secondProjectSentence.setAttribute("id", "show-sentence");
-  expandProjectButton.style.display = "none";
-});
+let allSecondProjectSentences = document.querySelectorAll(
+  ".second-project-sentence"
+);
+
+for (let i = 0; i < allExpandProjectButtons.length; i++) {
+  allExpandProjectButtons[i].addEventListener("click", () => {
+    allSecondProjectSentences[i].setAttribute("id", "show-sentence");
+    allExpandProjectButtons[i].style.display = "none";
+  });
+}
