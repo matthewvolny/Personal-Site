@@ -158,12 +158,12 @@ section + section {
   display: flex;
   width: 100%;
   height: 100%;
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
 }
 
 .intro-and-skills-flex {
   width: 60%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding-right: 2.3rem;
 }
 
@@ -175,7 +175,7 @@ section + section {
   display: flex;
   flex-direction: column;
   height: 211px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   margin-top: 1.3rem;
 }
 
@@ -183,7 +183,7 @@ section + section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
   list-style-type: square;
   padding-left: 22px;
   margin-left: 0;
@@ -237,45 +237,9 @@ section + section {
   transform-origin: 0% 0%;
 }
 
-/*  */
-/*  */
-/* .about-me-flex {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.intro-and-skills-flex {
-  width: 100%;
-  padding-right: 0rem;
-}
-
-.profile-image-container {
-  position: absolute;
-  right: 0px;
-  top: 280px;
-  width: 60%;
-  z-index: 5;
-}
-
-.listed-skills-flex {
-  width: 40% !important;
-  height: 100%;
-  margin-top: 1.5rem;
-}
-
-.listed-skills-flex li {
-  margin-right: 10%;
-  margin-top: 0;
-  margin-bottom: 0.9rem;
-} */
-/*  */
-/*  */
-
 .project {
   display: flex;
-  border: 1px solid tan;
+  /* border: 1px solid tan; */
   height: 900px;
 }
 
@@ -497,7 +461,7 @@ section + section {
 }
 
 .project-name {
-  margin-top: 1.1rem;
+  margin-top: 1rem;
   font-size: 1.66rem;
   font-weight: 200;
   /* margin-top: 0.5rem;
@@ -506,10 +470,10 @@ section + section {
 }
 
 .description-odd {
-  margin-top: 1.1rem;
+  margin-top: 1rem;
   margin-bottom: 0;
   font-size: 1.2rem;
-  line-height: 1.8rem;
+  line-height: 1.85rem;
   /*   margin-top: 0.5rem;
   margin-bottom: 0;
   font-size: 1.1rem; */
@@ -525,7 +489,7 @@ section + section {
 .tech-container {
   width: 100%;
   /* border: 1px solid red; */
-  margin-top: 1.15rem;
+  margin-top: 1.1rem;
   padding-top: 0;
   color: #8992b0;
 }
@@ -581,7 +545,7 @@ section + section {
 .links {
   width: 100%;
   /* border: 1px solid green; */
-  margin-top: 1.15rem;
+  margin-top: 1.1rem;
   /* margin-bottom: 3.5rem; */
 }
 
@@ -639,7 +603,7 @@ section + section {
 }
 
 .links img {
-  width: 30px;
+  width: 35px;
   /* border: 1px solid red; */
 }
 
@@ -892,10 +856,16 @@ section + section {
   display: none;
 }
 
-/* ! */
-/* ! */
-/* ! */
+/*  */
+/*  */
+/*  */
 /* project elements (description and image) */
+/*! min width media queries */
+@media only screen and (min-width: 1310px) {
+  .project-odd > .project-image-container {
+    margin-left: -315px !important;
+  }
+}
 
 @media only screen and (min-width: 1294px) {
   .project-odd > .project-image-container {
@@ -904,84 +874,26 @@ section + section {
     max-height: 557px !important;
   }
 }
-
-@media only screen and (min-width: 1310px) {
-  .project-odd > .project-image-container {
-    margin-left: -315px !important;
-  }
-}
+/* ! */
 
 @media only screen and (max-width: 1378px) {
   .project-odd > .project-details {
-    padding: 1.65em 2.05em;
+    padding: 1.59em 1.99em;
   }
 
   .inset-tagline {
-    font-size: 1.24rem;
-  }
-
-  .project-name {
-    margin-top: 0.95rem;
-    font-size: 1.65rem;
-  }
-
-  .description-odd {
-    margin-top: 0.95rem;
-    font-size: 1.19rem;
-    line-height: 1.9rem;
-  }
-
-  .tech-container {
-    width: 55%;
-    /* border: red 1px solid; */
-    margin-top: 0.95rem;
-    padding-left: 1.1rem;
-  }
-
-  .tech {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
-    list-style: square;
-    /* border: 1px solid purple; */
-    height: 70px;
-  }
-
-  .tech-odd > li:first-child {
-    margin-top: 0rem;
-  }
-
-  .tech-odd > li {
-    font-size: 1.19rem;
-    margin-top: 1.2rem;
-    margin-top: 0;
-    margin-right: 3rem;
-  }
-
-  .links {
-    margin-top: 0.95rem;
-  }
-}
-
-@media only screen and (max-width: 1340px) {
-  .project-odd > .project-details {
-    padding: 1.6em 2em;
-  }
-
-  .inset-tagline {
-    font-size: 1.22rem;
+    font-size: 1.23rem;
   }
 
   .project-name {
     margin-top: 0.9rem;
-    font-size: 1.63rem;
+    font-size: 1.64rem;
   }
 
   .description-odd {
     margin-top: 0.9rem;
-    font-size: 1.17rem;
-    line-height: 1.8rem;
+    font-size: 1.18rem;
+    line-height: 1.88rem;
   }
 
   .tech-container {
@@ -998,7 +910,7 @@ section + section {
     flex-wrap: wrap;
     list-style: square;
     /* border: 1px solid purple; */
-    height: 80px;
+    height: 77px;
   }
 
   .tech-odd > li:first-child {
@@ -1006,7 +918,7 @@ section + section {
   }
 
   .tech-odd > li {
-    font-size: 1.17rem;
+    font-size: 1.18rem;
     margin-top: 1.2rem;
     margin-top: 0;
     margin-right: 3rem;
@@ -1015,32 +927,36 @@ section + section {
   .links {
     margin-top: 0.9rem;
   }
+
+  .links img {
+    width: 30px;
+  }
 }
 
-@media only screen and (max-width: 1329px) {
+@media only screen and (max-width: 1327px) {
   .project-odd > .project-details {
     padding: 1.55em 1.95em;
   }
 
   .inset-tagline {
-    font-size: 1.18rem;
+    font-size: 1.13rem;
   }
 
   .project-name {
-    margin-top: 0.8rem;
-    font-size: 1.59rem;
+    margin-top: 0.67rem;
+    font-size: 1.55rem;
   }
 
   .description-odd {
-    margin-top: 0.8rem;
-    font-size: 1.13rem;
-    line-height: 1.78rem;
+    margin-top: 0.67rem;
+    font-size: 1.125rem;
+    line-height: 1.77rem;
   }
 
   .tech-container {
-    width: 50%;
+    width: 60%;
     /* border: red 1px solid; */
-    margin-top: 0.8rem;
+    margin-top: 0.67rem;
     padding-left: 1.1rem;
   }
 
@@ -1051,7 +967,7 @@ section + section {
     flex-wrap: wrap;
     list-style: square;
     /* border: 1px solid purple; */
-    height: 105px;
+    height: 75px;
   }
 
   .tech-odd > li:first-child {
@@ -1059,14 +975,14 @@ section + section {
   }
 
   .tech-odd > li {
-    font-size: 1.13rem;
+    font-size: 1.125rem;
     /* margin-top: 1rem; */
     margin-top: 0;
-    margin-right: 3rem;
+    margin-right: 2.7rem;
   }
 
   .links {
-    margin-top: 0.8rem;
+    margin-top: 1.1rem;
   }
 }
 
@@ -1083,38 +999,26 @@ section + section {
     max-width: 640px;
     min-width: 640px;
   }
-}
-
-@media only screen and (max-width: 1215px) {
-  .project-odd > .project-details {
-    height: 450px;
-    min-height: 450px;
-    max-height: 450px;
-  }
-
-  .project-odd > .project-details {
-    padding: 1.5em 1.9em;
-  }
 
   .inset-tagline {
-    font-size: 1.17rem;
+    font-size: 1.125rem;
   }
 
   .project-name {
-    margin-top: 0.7rem;
-    font-size: 1.58rem;
+    margin-top: 0.6rem;
+    font-size: 1.5rem;
   }
 
   .description-odd {
-    margin-top: 0.7rem;
-    font-size: 1.13rem;
+    margin-top: 0.6rem;
+    font-size: 1.12rem;
     line-height: 1.65rem;
   }
 
   .tech-container {
-    width: 50%;
+    width: 60%;
     /* border: red 1px solid; */
-    margin-top: 0.7rem;
+    margin-top: 0.6rem;
     padding-left: 1.1rem;
   }
 
@@ -1125,7 +1029,7 @@ section + section {
     flex-wrap: wrap;
     list-style: square;
     /* border: 1px solid purple; */
-    height: 40px;
+    height: 73px;
   }
 
   .tech-odd > li:first-child {
@@ -1133,14 +1037,103 @@ section + section {
   }
 
   .tech-odd > li {
-    font-size: 1.13rem;
+    font-size: 1.12rem;
     /* margin-top: 1rem; */
     margin-top: 0;
     margin-right: 3rem;
   }
 
   .links {
-    margin-top: 0.7rem;
+    margin-top: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 1263px) {
+  .inset-tagline {
+    font-size: 1.125rem;
+  }
+
+  .project-name {
+    margin-top: 0.6rem;
+    font-size: 1.5rem;
+  }
+
+  .description-odd {
+    margin-top: 0.6rem;
+    font-size: 1.113rem;
+    line-height: 1.77rem;
+  }
+
+  .tech-container {
+    width: 60%;
+    /* border: red 1px solid; */
+    margin-top: 0.6rem;
+    padding-left: 1.1rem;
+  }
+
+  .tech {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: square;
+    /* border: 1px solid purple; */
+    height: 76px;
+  }
+
+  .tech-odd > li:first-child {
+    margin-top: 0rem;
+  }
+
+  .tech-odd > li {
+    font-size: 1.113rem;
+    /* margin-top: 1rem; */
+    margin-top: 0;
+    margin-right: 3rem;
+  }
+
+  .links {
+    margin-top: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 1215px) {
+  .project-odd > .project-details {
+    height: 450px;
+    min-height: 450px;
+    max-height: 450px;
+  }
+
+  .tech-container {
+    width: 80%;
+    /* border: red 1px solid; */
+    margin-top: 0.6rem;
+    padding-left: 1.1rem;
+  }
+
+  .tech {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: square;
+    /* border: 1px solid purple; */
+    height: 35px;
+  }
+
+  .tech-odd > li:first-child {
+    margin-top: 0rem;
+  }
+
+  .tech-odd > li {
+    font-size: 1.113rem;
+    /* margin-top: 1rem; */
+    margin-top: 0;
+    margin-right: 3.3rem;
+  }
+
+  .links {
+    margin-top: 0.95rem;
   }
 }
 
@@ -1149,6 +1142,19 @@ section + section {
     height: 425px;
     min-height: 425px;
     max-height: 425px;
+  }
+}
+
+@media only screen and (max-width: 1063px) {
+  .project {
+    position: relative;
+  }
+
+  .links {
+    position: absolute;
+    left: 510px;
+    top: 286px;
+    margin-top: 0.95rem;
   }
 }
 
@@ -1181,11 +1187,16 @@ section + section {
     max-width: 650px;
     height: auto;
     min-height: auto;
-    max-height: auto;
+    max-height: 1000px;
+  }
+
+  .project {
+    position: static;
   }
 
   .links {
-    margin-bottom: 0rem;
+    position: static;
+    margin-top: 0.7rem;
   }
 }
 
@@ -1194,6 +1205,15 @@ section + section {
     height: 603px !important;
     min-height: 603px !important;
     max-height: 603px !important;
+  }
+
+  .project {
+    position: static;
+  }
+
+  .links {
+    position: static;
+    margin-top: 0.7rem;
   }
 }
 
@@ -1217,12 +1237,24 @@ section + section {
     width: 100%;
     min-width: 100%;
     max-width: 100%;
+    height: auto;
+    min-height: auto;
+    max-height: 1000px;
+  }
+
+  .project {
+    position: static;
+  }
+
+  .links {
+    position: static;
+    margin-top: 0.7rem;
   }
 }
 
-/* ! */
-/* ! */
-/* ! */
+/*  */
+/*  */
+/*  */
 /* reduce project box font sizes */
 @media only screen and (max-width: 1098px) {
   .inset-tagline {

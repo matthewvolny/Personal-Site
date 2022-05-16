@@ -217,6 +217,7 @@ const scaleProjectImageContainer = (currentWidth) => {
       projectImageContainerWidth - projectImageSpaceToLeft;
     projectImageContainer.style.marginLeft = `-${projectImageContainerOverlap}px`;
   } else {
+  }
 };
 
 //sets page width to state!
