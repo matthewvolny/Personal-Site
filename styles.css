@@ -128,7 +128,7 @@ header {
 
 .intro-blurb {
   margin-top: 0.8rem;
-  width: 547px;
+  width: 530px;
   /* border: 1px solid yellowgreen; */
 }
 
@@ -702,7 +702,7 @@ section {
   justify-content: center; /**/
   align-items: center;
   margin-top: 1.5rem;
-  margin-bottom: 10rem;
+  margin-bottom: 12rem;
   width: 217px;
   margin-left: auto;
   margin-right: auto;
@@ -1935,16 +1935,28 @@ section {
 /*  */
 /*  */
 /* intro-blurb and get-in-touch (footer) blurb widths */
-@media only screen and (max-width: 1170px) {
-  /* .intro-blurb {
-  margin-top: 0.8rem;
-  width: 547px;
- 
-} */
+@media only screen and (max-width: 1038px) {
+  .intro-blurb {
+    width: 450px;
+  }
+}
 
+@media only screen and (max-width: 1170px) {
   .contact-me-paragraph {
     width: 86.6%;
     /* border: 1px solid red; */
+  }
+}
+
+@media only screen and (max-width: 752px) {
+  .intro-blurb {
+    width: 365px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .intro-blurb {
+    width: 355px;
   }
 }
 
@@ -1954,8 +1966,38 @@ section {
   }
 }
 
+@media only screen and (max-width: 578px) {
+  .intro-blurb {
+    width: 340px;
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  .intro-blurb {
+    width: 330px;
+  }
+}
+
 @media only screen and (max-width: 508px) {
   .contact-me-paragraph {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 436px) {
+  .intro-blurb {
+    width: 310px;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  .intro-blurb {
+    width: 270px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .intro-blurb {
     width: 100%;
   }
 }
