@@ -4,7 +4,7 @@ function addInView() {
     let topSide = sections[i].getBoundingClientRect().top;
     let viewportHeight = document.documentElement.clientHeight;
     if (topSide <= viewportHeight - viewportHeight / 5) {
-      sections[i].setAttribute("id", "in-viewport");
+      sections[i].setAttribute("class", "in-viewport");
     }
   }
 }
@@ -292,6 +292,7 @@ let allSecondProjectSentences = document.querySelectorAll(
 
 for (let i = 0; i < allExpandProjectButtons.length; i++) {
   allExpandProjectButtons[i].addEventListener("click", () => {
+    allSecondProjectSentences[i].style.transition = "all 600ms ease-in-out";
     allSecondProjectSentences[i].setAttribute("id", "show-sentence");
     allExpandProjectButtons[i].style.display = "none";
   });

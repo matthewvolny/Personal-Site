@@ -149,7 +149,7 @@ section + section {
   margin-top: 5.5rem;
 }
 
-#in-viewport {
+.in-viewport {
   visibility: visible;
   opacity: 1;
 }
@@ -1612,7 +1612,6 @@ section + section {
     opacity: 0;
     background-color: rgb(128, 128, 128, 0.8);
     position: absolute;
-    /* transition: all 600ms ease-in-out; */
   }
 
   .expand-project-button {
@@ -1632,13 +1631,6 @@ section + section {
     opacity: 1;
     position: static;
     background-color: transparent;
-  }
-}
-
-/* cannot add transition at max-width 715px because I get an undesirable fade in effect */
-@media only screen and (max-width: 714px) {
-  .second-project-sentence {
-    transition: all 600ms ease-in-out;
   }
 }
 
