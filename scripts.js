@@ -134,6 +134,8 @@ for (let i = 0; i < navDropdownItems.length; i++) {
     console.log(e.target.textContent);
     dropdownToggle = false;
     navDropdown.style.display = "none";
+    hamburgerButton.removeAttribute("class", "open");
+    introSection.style.marginTop = "16vh";
   });
 }
 

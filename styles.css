@@ -729,13 +729,13 @@ section {
 }
 
 /* hamburger nav stuff */
-.hamburger-nav ul > li {
+.hamburger-nav ul li {
   height: 100%;
   /* border: 1px solid orange; */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.55rem;
+  padding: 0.55rem 0;
   margin: 0;
 }
 
@@ -764,7 +764,7 @@ section {
   position: relative;
   /* margin: 50px auto; */
   transform: rotate(0deg);
-  transition: 0.5s ease-in-out;
+  transition: 450ms ease-in-out;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -782,7 +782,8 @@ section {
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
-  transition: 0.25s ease-in-out;
+  transition: 225ms ease-in-out;
+  /* border: 1px solid red; */
 }
 
 #nav-icon3 span:nth-child(1) {
@@ -1066,6 +1067,12 @@ section {
 }
 
 @media only screen and (max-width: 1263px) {
+  /*! adjustment for projects with more text in the description */
+  #project-3,
+  #project-4 {
+    height: 925px;
+  }
+
   .inset-tagline {
     font-size: 1.125rem;
   }
@@ -1155,6 +1162,14 @@ section {
 }
 
 @media only screen and (max-width: 1140px) {
+  /*! adjustment for projects with more text in the description */
+  #project-3 > .project-details,
+  #project-4 > .project-details {
+    height: 460px;
+    min-height: 460px;
+    max-height: 460px;
+  }
+
   .project-odd > .project-details {
     height: 425px;
     min-height: 425px;
@@ -1162,7 +1177,28 @@ section {
   }
 }
 
+@media only screen and (max-width: 1098px) {
+  /*! adjustment for projects with more text in the description */
+   /*! adjustment for projects with more text in the description */
+  #project-3,
+  #project-4 {
+    height: 890px;
+  }
+   /*! adjustment for projects with more text in the description */
+  #project-3 > .project-details,
+  #project-4 > .project-details {
+    height: 425px;
+    min-height: 425px;
+    max-height: 425px;
+  }
+
 @media only screen and (max-width: 1063px) {
+   /*! adjustment for projects with more text in the description */
+  #project-3,
+  #project-4 {
+    position: relative;
+  }
+ 
   .project {
     position: relative;
   }
@@ -1176,6 +1212,14 @@ section {
 }
 
 @media only screen and (max-width: 1035px) {
+     /*! adjustment for projects with more text in the description */
+  #project-3 > .project-details,
+  #project-4 > .project-details {
+    height: 415px;
+    min-height: 415px;
+    max-height: 415px;
+  }
+  
   .project-odd > .project-details {
     height: 415px;
     min-height: 415px;
@@ -1184,7 +1228,24 @@ section {
 }
 
 @media only screen and (min-width: 936px) and (max-width: 985px) {
+    /*! adjustment for projects with more text in the description */
+  #project-3,
+  #project-4 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+   /*! adjustment for projects with more text in the description */
+  #project-3 > .project-details,
+  #project-4 > .project-details {
+    height: auto;
+    min-height: auto;
+    max-height: 1000px;
+  }
+  
   .project {
+    position: static;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -1207,10 +1268,6 @@ section {
     max-height: 1000px;
   }
 
-  .project {
-    position: static;
-  }
-
   .links {
     position: static;
     margin-top: 0.7rem;
@@ -1218,6 +1275,24 @@ section {
 }
 
 @media only screen and (min-width: 935px) and (max-width: 935px) {
+     /*! adjustment for projects with more text in the description */
+  #project-3,
+  #project-4 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+   /*! adjustment for projects with more text in the description */
+  #project-3 > .project-details,
+  #project-4 > .project-details {
+    height: auto;
+    min-height: auto;
+    max-height: 1000px;
+    position: static;
+  }
+  
+  
   .project-odd > .project-image-container {
     height: 603px !important;
     min-height: 603px !important;
@@ -1235,6 +1310,23 @@ section {
 }
 
 @media only screen and (max-width: 935px) {
+     /*! adjustment for projects with more text in the description */
+  #project-3,
+  #project-4 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+   /*! adjustment for projects with more text in the description */
+  #project-3 > .project-details,
+  #project-4 > .project-details {
+    height: auto;
+    min-height: auto;
+    max-height: 1000px;
+    position: static;
+  }
+  
   .project {
     display: flex;
     flex-direction: column;
@@ -1702,12 +1794,6 @@ section {
   }
 }
 
-@media only screen and (max-width: 939px) {
-  .profile-image-container {
-    top: 292px;
-  }
-}
-
 @media only screen and (max-width: 935px) {
   .listed-skills-flex li {
     margin-right: 24%;
@@ -1736,7 +1822,7 @@ section {
   }
 }
 
-@media only screen and (max-width: 862px) {
+@media only screen and (max-width: 858px) {
   .profile-image-container {
     top: 292px;
   }
@@ -1748,20 +1834,20 @@ section {
   }
 }
 
-@media only screen and (max-width: 823px) {
+@media only screen and (max-width: 819px) {
   .profile-image-container {
     top: 292px;
   }
 }
 
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 726px) {
   .profile-image-container {
     top: 326px;
     width: 55%;
   }
 }
 
-@media only screen and (max-width: 685px) {
+@media only screen and (max-width: 681px) {
   .profile-image-container {
     top: 357px;
   }
