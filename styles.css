@@ -4,7 +4,7 @@
   letter-spacing: 0.05rem;
   margin: 2.3em 7.4em 2.2em 7.4em;
   font-family: "Roboto", sans-serif;
-  line-height: 1.69rem;
+  line-height: 1.7rem;
 }
 
 * {
@@ -97,7 +97,9 @@ header {
 .intro {
   /* border: silver 1px solid; */
   margin-top: 16vh;
-  margin-bottom: 7em;
+  /* margin-bottom: 7em; */
+  /* need to switch to padding to get proper scroll-to */
+  padding-bottom: 7em;
 }
 
 .lead-in {
@@ -126,7 +128,7 @@ header {
 
 .intro-blurb {
   margin-top: 0.8rem;
-  width: 55%;
+  width: 547px;
   /* border: 1px solid yellowgreen; */
 }
 
@@ -146,7 +148,17 @@ section {
 }
 
 section + section {
-  margin-top: 5.5rem;
+  /* margin-top: 5.5rem; */
+  /* need to switch to padding to get proper scroll-to */
+  /* padding-bottom: 5.5rem; */
+}
+
+section {
+  margin-top: 0;
+  padding-bottom: 1.3rem;
+  padding-top: 4.2rem;
+  /* need to switch to padding to get proper scroll-to */
+  /* padding-bottom: 5.5rem; */
 }
 
 .in-viewport {
@@ -654,12 +666,12 @@ section + section {
 }
 
 .contact-me-paragraph {
-  width: 70%;
+  width: 767px;
 }
 
-.hello-button {
+#hello-button {
   text-align: center;
-  margin-top: 1.6rem;
+  margin-top: 1.65rem;
   display: block;
   color: #008c86;
   border: #008c86 solid 1px;
@@ -669,7 +681,7 @@ section + section {
   text-decoration: none;
 }
 
-.hello-button:hover {
+#hello-button:hover {
   color: white;
   background-color: #008c86;
   border: #008c86 solid 1px;
@@ -689,8 +701,8 @@ section + section {
   display: flex;
   justify-content: center; /**/
   align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 10rem;
   width: 217px;
   margin-left: auto;
   margin-right: auto;
@@ -1916,5 +1928,34 @@ section + section {
 
   .swiper-button-next::after {
     font-size: 60px !important;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/* intro-blurb and get-in-touch (footer) blurb widths */
+@media only screen and (max-width: 1170px) {
+  /* .intro-blurb {
+  margin-top: 0.8rem;
+  width: 547px;
+ 
+} */
+
+  .contact-me-paragraph {
+    width: 86.6%;
+    /* border: 1px solid red; */
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .contact-me-paragraph {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 508px) {
+  .contact-me-paragraph {
+    width: 100%;
   }
 }
