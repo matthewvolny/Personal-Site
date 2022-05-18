@@ -224,13 +224,19 @@ section {
 .profile-image-container {
   margin-top: 0;
   width: 40%;
-  /* border: 1px solid rgb(0, 47, 255); */
+  
   position: relative;
   z-index: 5;
 }
 
+.my-photo {
+  /* border: 1px solid rgb(0, 47, 255); */
+  /* box-shadow: 0 3px 10px rgba(147, 147, 147, 0.1); */
+}
+
 .profile-image-container > img {
   width: 91%;
+  box-shadow: 0 3px 10px rgba(147, 147, 147, 0.1);
 }
 
 .profile-image-background {
@@ -403,6 +409,7 @@ section {
   z-index: 50;
   box-shadow: 0 3px 10px rgba(147, 147, 147, 0.1);
   /* transition: all 300ms ease-in-out; */
+  border: rgb(189, 189, 189, 0.2) 1px solid;
 }
 
 /* will not move left befond 1036px */
