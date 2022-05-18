@@ -38,6 +38,16 @@ header {
   object-fit: cover;
   height: 100%;
   /* border: 1px solid orange; */
+  animation: fade-in 700ms ease-in-out both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* come back to this */
@@ -66,6 +76,35 @@ header {
   padding-right: 1.32em;
   list-style: none;
   /* border: 1px solid red; */
+}
+
+#about-nav-animation {
+  animation: fade-in-top 400ms ease-in-out both;
+  animation-delay: 350ms;
+}
+#portfolio-nav-animation {
+  animation: fade-in-top 400ms ease-in-out both;
+  animation-delay: 425ms;
+}
+#contact-nav-animation {
+  animation: fade-in-top 400ms ease-in-out both;
+  animation-delay: 575ms;
+}
+
+#resume {
+  animation: fade-in-top 400ms ease-in-out both;
+  animation-delay: 650ms;
+}
+
+@keyframes fade-in-top {
+  0% {
+    transform: translateY(-15px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .main-nav > ul li a {
@@ -104,8 +143,10 @@ header {
 
 .lead-in {
   color: #008c86;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   /* border: 1px solid orange; */
+  animation: fade-in-bottom 500ms ease-in-out both;
+  animation-delay: 1300ms;
 }
 
 .name {
@@ -115,23 +156,39 @@ header {
   font-weight: 500;
   line-height: 3.4rem;
   /* border: 1px solid purple; */
+  animation: fade-in-bottom 500ms ease-in-out both;
+  animation-delay: 1375ms;
 }
 
 .name + div {
-  margin-top: 0.4rem;
+  margin-top: 0.35rem;
   color: #8992b0;
   font-size: 2.5em;
   /* border: 1px solid green; */
   line-height: 3.4rem;
   font-weight: 500;
+  animation: fade-in-bottom 500ms ease-in-out both;
+  animation-delay: 1450ms;
 }
 
 .intro-blurb {
   margin-top: 0.8rem;
   width: 530px;
   /* border: 1px solid yellowgreen; */
+  animation: fade-in-bottom 500ms ease-in-out both;
+  animation-delay: 1525ms;
 }
 
+@keyframes fade-in-bottom {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /*  */
 /*  */
 
@@ -638,7 +695,19 @@ section {
   position: fixed;
   bottom: 150px;
   left: 55px;
+  animation: fade-in-sidebar 700ms ease-in-out both;
+  animation-delay: 2.05s;
 }
+
+@keyframes fade-in-sidebar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .sidebar::after {
   position: absolute;
   content: ".";
@@ -663,6 +732,7 @@ section {
 
 .sidebar > ul li a {
 }
+
 .sidebar-icon {
   width: 30px;
 }
