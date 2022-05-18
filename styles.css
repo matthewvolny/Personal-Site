@@ -686,7 +686,12 @@ section {
 .links img {
   width: 35px;
   /* border: 1px solid red; */
+  /* transition: all 100ms ease-in-out; */
 }
+
+/* .links-odd > ul li:hover {
+  transform: scale(1.1);
+} */
 
 /*  */
 /* sidebar */
@@ -736,6 +741,44 @@ section {
 .sidebar-icon {
   width: 30px;
 }
+
+/*  */
+/*  */
+/* animate sidebar icons on hover */
+#icons-transition-container {
+  position: relative;
+  margin: 0;
+}
+
+#icons-transition-container a + a {
+  margin-top: 0;
+  position: absolute;
+  left: 0;
+  opacity: 1;
+  /* transition: all 4s ease-in-out; */
+}
+.bottom img {
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+.top img {
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+
+.top img:hover {
+  opacity: 0;
+  transform: translateY(-5px) scale(1.03);
+}
+
+#show-bottom-icon {
+  opacity: 1;
+  transform: translateY(-5px) scale(1.03);
+}
+/*  */
+/*  */
+/*  */
 
 .contact {
   /* border: 1px solid red; */

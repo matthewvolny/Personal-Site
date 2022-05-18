@@ -299,3 +299,30 @@ for (let i = 0; i < allExpandProjectButtons.length; i++) {
     allExpandProjectButtons[i].style.display = "none";
   });
 }
+
+// icon event listeners
+const buttonTopIconImages = document.querySelectorAll(".top img");
+const buttonBottomIconImages = document.querySelectorAll(".bottom img");
+
+for (let i = 0; i < buttonTopIconImages.length; i++) {
+  buttonTopIconImages[i].addEventListener("mouseover", () => {
+    buttonBottomIconImages[i].setAttribute("id", "show-bottom-icon");
+  });
+}
+
+for (let i = 0; i < buttonTopIconImages.length; i++) {
+  buttonTopIconImages[i].addEventListener("mouseleave", () => {
+    buttonBottomIconImages[i].removeAttribute("id");
+  });
+}
+
+// const githubIcon = document.querySelector(".github-icon");
+// githubIcon.addEventListener("mouseover", () => {
+//   console.log("mouse over");
+//   githubIcon.src = "./assets/github-icon-colored.png";
+// });
+
+// githubIcon.addEventListener("mouseleave", () => {
+//   console.log("mouse left");
+//   githubIcon.src = "./assets/icons8-github.svg";
+// });
