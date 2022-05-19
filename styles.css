@@ -1873,6 +1873,60 @@ section {
   }
   .hamburger-nav {
     display: inline-block;
+    animation: fade-in-top 400ms ease-in-out both;
+    animation-delay: 375ms;
+  }
+
+  @keyframes fade-in-top {
+    0% {
+      transform: translateY(-15px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /*  */
+  .lead-in {
+    animation-delay: 1025ms;
+  }
+
+  .name {
+    animation-delay: 1100ms;
+  }
+
+  .name + div {
+    animation-delay: 1175ms;
+  }
+
+  .intro-blurb {
+    animation-delay: 1250ms;
+  }
+
+  @keyframes fade-in-bottom {
+    0% {
+      transform: translateY(25px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .sidebar {
+    animation-delay: 1775ms;
+  }
+
+  @keyframes fade-in-sidebar {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
 
@@ -1892,6 +1946,18 @@ section {
     margin: 0;
   }
 }
+
+@media only screen and (max-width: 780px) {
+  header {
+    height: 50px;
+    /* border: 1px solid tan; */
+  }
+
+  #hamburger-li {
+    padding: 0.24rem 0;
+  }
+}
+
 /*  */
 /*  */
 /*  */
