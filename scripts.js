@@ -300,7 +300,7 @@ for (let i = 0; i < allExpandProjectButtons.length; i++) {
   });
 }
 
-// icon event listeners
+// sidebar icon event listeners
 const buttonTopIconImages = document.querySelectorAll(".top img");
 const buttonBottomIconImages = document.querySelectorAll(".bottom img");
 
@@ -316,13 +316,50 @@ for (let i = 0; i < buttonTopIconImages.length; i++) {
   });
 }
 
-// const githubIcon = document.querySelector(".github-icon");
-// githubIcon.addEventListener("mouseover", () => {
-//   console.log("mouse over");
-//   githubIcon.src = "./assets/github-icon-colored.png";
-// });
+// project description icon event listeners
+const projectDescTopIconImages = document.querySelectorAll(
+  ".project-description-link-top img"
+);
+const projectDescBottomIconImages = document.querySelectorAll(
+  ".project-description-link-bottom img"
+);
 
-// githubIcon.addEventListener("mouseleave", () => {
-//   console.log("mouse left");
-//   githubIcon.src = "./assets/icons8-github.svg";
-// });
+for (let i = 0; i < projectDescTopIconImages.length; i++) {
+  projectDescTopIconImages[i].addEventListener("mouseover", () => {
+    console.log("mouse over");
+    projectDescBottomIconImages[i].setAttribute(
+      "id",
+      "show-project-description-link-bottom-icon"
+    );
+  });
+}
+
+for (let i = 0; i < projectDescTopIconImages.length; i++) {
+  projectDescTopIconImages[i].addEventListener("mouseleave", () => {
+    console.log("mouse leave");
+    projectDescBottomIconImages[i].removeAttribute("id");
+  });
+}
+
+// footer icon event listeners
+const footerTopIconImages = document.querySelectorAll(".footer-link-top img");
+const footerBottomIconImages = document.querySelectorAll(
+  ".footer-link-bottom img"
+);
+
+for (let i = 0; i < footerTopIconImages.length; i++) {
+  footerTopIconImages[i].addEventListener("mouseover", () => {
+    console.log("mouse over");
+    footerBottomIconImages[i].setAttribute(
+      "id",
+      "show-footer-link-bottom-icon"
+    );
+  });
+}
+
+for (let i = 0; i < footerTopIconImages.length; i++) {
+  footerTopIconImages[i].addEventListener("mouseleave", () => {
+    console.log("mouse leave");
+    footerBottomIconImages[i].removeAttribute("id");
+  });
+}
