@@ -1924,6 +1924,12 @@ section {
   }
 }
 
+@media only screen and (max-width: 420px) {
+  :root {
+    margin: 1.2em 1em 1.2em 1.8em;
+  }
+}
+
 /*  */
 /*  */
 /*  */
