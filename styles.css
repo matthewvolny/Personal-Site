@@ -346,6 +346,20 @@ section {
   transform-origin: 0% 0%;
 }
 
+.profile-image-background-two {
+  margin-top: 0;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 91%;
+  /* background-color: #667094; */
+  background-color: #008c86;
+  box-shadow: 0 3px 10px rgba(147, 147, 147, 0.1);
+  z-index: -1;
+  transition: all 250ms ease-in-out;
+  /* border-radius: 1rem; */
+}
+
 .project {
   display: flex;
   /* border: 1px solid tan; */
