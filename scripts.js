@@ -357,14 +357,23 @@ const myPhotoOverlay = document.querySelector(".my-photo-overlay");
 const profileImageBackground = document.querySelector(
   ".profile-image-background"
 );
+const profileImageBackgroundTwo = document.querySelector(
+  ".profile-image-background-two"
+);
+
 myPhotoContainer.addEventListener("mouseover", () => {
   console.log("mouse entered");
   myPhotoOverlay.setAttribute("id", "photo-overlay-hovered");
   profileImageBackground.setAttribute("id", "profile-background-hovered");
+  profileImageBackgroundTwo.setAttribute(
+    "id",
+    "profile-background-two-hovered"
+  );
 });
 
 myPhotoContainer.addEventListener("mouseout", () => {
   console.log("mouse left");
   myPhotoOverlay.removeAttribute("id");
   profileImageBackground.removeAttribute("id");
+  profileImageBackgroundTwo.removeAttribute("id");
 });
