@@ -2506,6 +2506,10 @@ section {
 }
 
 @media only screen and (max-width: 390px) {
+  .built-by {
+    margin-top: 3rem;
+  }
+
   .footer-links {
     margin-bottom: 12.5rem;
   }
