@@ -29,10 +29,13 @@ header {
   display: flex;
   justify-content: space-between;
   /* border: 1px solid tan; */
+  width: 100%;
 }
 
 .logo-container {
   /* border: 1px solid red; */
+  /* below width had to be added for safari compatibility */
+  width: 100px;
 }
 
 .logo-container > img {
